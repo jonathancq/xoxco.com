@@ -12,9 +12,9 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/plugin.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="/2013/css/normalize.css">
+        <link rel="stylesheet" href="/2013/css/plugin.css">
+        <script src="/2013/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,7 +25,7 @@
         <div id="main" class="plugin-page blue-theme breakpoints-background light-font">
 	        <div id="nav" class="section">
 	        	<a href="http://xoxco.com">
-	        		<img src="img/xoxcologo_cropped.png" height="50" width="302" class="logo"/>
+	        		<img src="/2013/img/xoxcologo_cropped.png" height="50" width="302" class="logo"/>
 	        	</a>
 	     	</div>
 		 	<a href="https://github.com/xoxco/breakpoints"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
@@ -39,14 +39,15 @@
     			</div>
 	     	</div>
 	     	
-	     	<div id="aware-container" class="section">
+	     	<div id="aware-container" class="section first-visit-only">
 		     	<div class="inner">
 			     	<div class="aware-status">
-				     	Welcome! This is your first time on our site!
-				     	<a href="http://xoxco.com/projects/code/aware/">How did I know?</a>
+				     	Welcome to XOXCO, new visitor! <a href="http://twitter.com/xoxco">Follow us on Twitter</a> or <a href="#dispatch">subscribe to our newsletter</a> to receive news and announcements from XOXCO.
+				     	<div class="smaller"><a href="http://xoxco.com/projects/code/aware/" class="smaller">How do we know this is your first visit?</a></div>
 			     	</div>
 		     	</div>
 	     	</div>
+
 	     	<div id="plugin-title" class="section">
 		     	<div class="inner">
 			     	<h1>BREAKPOINTS.JS</h1>
@@ -56,20 +57,27 @@
 	     		<div class="inner">
 	     			Define breakpoints for your responsive design, and Breakpoints.js will fire custom events when the browser enters and/or exits that breakpoint.
 	     			<div class="">
-		     			<img src="img/Breakpoints_hero.png" />
+		     			<img src="/2013/img/Breakpoints_hero.png" />
 	     			</div>
 	     		</div>
 	     	</div>
 	     	<div id="demos" class="section">
 		     	<div class="inner">
 			     	<div class="demo">
-				     	<a href="http://xoxco.com/projects/code/breakpoints/">View Demo</a>
+				     	<a href="http://xoxco.com/projects/code/breakpoints/example.html">View Demo</a>
 			     	</div>
 			     	 <div class="demo github long">
 				     	<a href="https://github.com/xoxco/breakpoints">Get it from Github</a>
 			     	</div>
 			     	<div class="clear"></div>
 		     	</div>
+	     	</div>
+	     	
+	     	<div class="section">
+	     		<div class="inner">
+	     			You may also be interested in our other JavaScript tools,
+	     			<a href="../aware/">Aware.JS</a> and <a href="../tagsinput/">jQuery Tags Input</a>.
+	     		</div>
 	     	</div>
 
 	
@@ -78,7 +86,7 @@
 		    	<div class="inner">
 		    		<div class="dispatch-info">
 				    	<div class="dispatch-logo">
-					    	<a href="http://xoxco.com/dispatch"><img src="img/Dispatchheader.png" border="0" alt="Dispatch Logo" /></a>
+					    	<a href="http://xoxco.com/dispatch"><img src="/2013/img/Dispatchheader.png" border="0" alt="Dispatch Logo" /></a>
 				    	</div>
 				    	<p class="description">Receive XOXCO's curated broadcast of original essays and links about product design, publishing, and software. Featuring exclusive links to experimental software and limited edition digital downloads.</p>
 		    		</div>
@@ -124,7 +132,7 @@
 				    	</div>
 				    	<div class="clear"></div>
 				    	<p>XOXCO is a design and development company based in Austin, TX</p>
-				    	<p>&copy; 2008-2013 XOXCO inc</p>
+				    	<p>&copy; 2008-2013 XOXCO Inc</p>
 			    	</div>
 		    	</div>
 	    	</div>  
@@ -134,9 +142,10 @@
         </div>
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="/2013/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="/2013/js/awarejs/aware.js"></script>
+        <script src="/2013/js/plugins.js"></script>
+        <script src="/2013/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script type="text/javascript">
