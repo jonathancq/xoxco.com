@@ -207,27 +207,7 @@ textarea {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
 
 @media print {
     * {
@@ -318,57 +298,6 @@ textarea {
 	src: url('fonts/Avenir LT Std 85 Heavy/AvenirLTStd-Heavy.otf');
 }
 
-/* */
-@font-face {
-	font-family: 'Avenir';
-	font-style: oblique;
-	font-weight: 200;
-	src: url('fonts/Avenir LT Std 35 Light Oblique/AvenirLTStd-LightOblique.otf');
-}
-@font-face {
-	font-family: 'Avenir Book';
-	font-style: light;
-	src: url('fonts/Avenir LT Std 45 Book/AvenirLTStd-Book.otf');
-}
-@font-face {
-	font-family: 'Avenir Book';
-	font-style: oblique;
-	src: url('fonts/Avenir LT Std 45 Book Oblique/AvenirLTStd-BookOblique.otf');
-}
-@font-face {
-	font-family: 'Avenir';
-	font-style: oblique;
-	src: url('fonts/Avenir LT Std 55 Oblique/AvenirLTStd-Oblique.otf');
-}
-@font-face {
-	font-family: 'Avenir Roman';
-	font-style: normal;
-	src: url('fonts/Avenir LT Std 55 Roman/AvenirLTStd-Roman.otf');
-}
-@font-face {
-	font-family: 'Avenir';
-	font-style: oblique;
-	font-weight: normal;
-	src: url('fonts/Avenir LT Std 65 Medium Oblique/AvenirLTStd-MediumOblique.otf');
-}
-@font-face {
-	font-family: 'Avenir';
-	font-style: oblique;
-	font-weight: bolder;
-	src: url('fonts/Avenir LT Std 85 Heavy Oblique/AvenirLTStd-HeavyOblique.otf');
-}
-@font-face {
-	font-family: 'Avenir Black';
-	font-style: normal;
-	font-weight: normal;
-	src: url('fonts/Avenir LT Std 95 Black/AvenirLTStd-Black.otf');
-}
-@font-face {
-	font-family: 'Avenir Black';
-	font-style: oblique;
-	font-weight: normal;
-	src: url('fonts/Avenir LT Std 95 Black Oblique/AvenirLTStd-BlackOblique.otf');
-}
 
 /* */
 
@@ -530,6 +459,11 @@ img{
 	margin: 0px;
 	padding: 0px;
 }
+
+	#plugin-title h3{
+		margin-bottom: 0;
+	}
+
 #plugin-description .inner{
 	width: 55%;	
 		margin-left: auto;
@@ -537,8 +471,7 @@ img{
 }
 #plugin-description img{
 	display: block;
-	margin-top: 50px;
-	margin-bottom: 10px;
+	margin: 50px auto 10px;
 	max-width: 100%;
 }
 .blackgradient{
@@ -661,9 +594,10 @@ img{
 	width: 55%;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 #demos .demo{
-	float: left;
+	display: inline-block;
 	width: 22%;
 	margin: 1%;
 	padding-top: 13px;
@@ -761,6 +695,7 @@ img{
    box-shadow:         inset 0 30px 100px #000;
    text-align: left;
 }
+
 #dispatch .description{
 
 	line-height: 1.6em;
@@ -772,6 +707,10 @@ img{
 {
 	float: left;
 	width: 50%;	
+}
+
+#dispatch .dispatch-info {
+	padding-top: 1em;
 }
 #dispatch .dispatch-signup .button{
 	float: left;
@@ -788,6 +727,43 @@ img{
 .dispatch-signup input[type="email"]{
 	height: 30px;
 	width: 90%;
+	display: block;
+}
+
+
+a { color: #FFF; }
+
+.blue-theme a { 
+	color: #b3d4fc;
+}
+
+.smaller {
+	font-size: smaller;
+}
+
+/* Reader Aware Tricks */
+
+
+#recent-posts .tile.new {
+	border-left: 10px solid #de20a2;
+}
+
+.new:before {
+	content: 'new';
+	color: #FFF;
+	background: #5dace2;
+	position: absolute;
+	top: -4px;
+	right: -4px;
+	padding: 7px 10px;
+	-webkit-transform: rotate(12deg);
+}
+
+.first-visit-only {
+	display: none;
+}
+
+.first-visit .first-visit-only {
 	display: block;
 }
 
@@ -903,6 +879,7 @@ img{
 		font-size: 3.0em;
 	}
 	
+	
 	.breakpoints-background #plugin-title h1 {
 		font-size: 2.5em;
 	}
@@ -941,3 +918,6 @@ img{
 	}
 	
 }
+
+
+
