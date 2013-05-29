@@ -24,8 +24,6 @@ http.get('http://xoxapi.herokuapp.com/featured_posts/6/400',function(res) {
 		fs.writeFileSync('index.html',template({featured_posts: json}));
 		
 	});
-	
-	
 });
 
 

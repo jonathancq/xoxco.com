@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="/2013/js/jQuery-Tags-Input/jquery.tagsinput.css" type="text/css" media="screen" charset="utf-8">
         <script src="/2013/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body id="home_page">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -76,10 +76,10 @@
 				    	<a href="http://xoxco.com/dispatch"><img src="/2013/img/Dispatchheader.png" border="0" alt="Dispatch Logo" /></a>
 			    	</div>
 			    	<p class="description">Receive XOXCO's curated broadcast of original essays and links about product design, publishing, and software. Featuring exclusive links to experimental software and limited edition digital downloads.</p>
-			    	<div class="dispatch-books">
+			    	<div class="dispatch-books half">
 				    	<img src="/2013/img/Dispatchbooks.png" alt="Dispatch eBook Covers" />
 			    	</div>
-			    	<div class="dispatch-signup">
+			    	<div class="dispatch-signup half">
 				    	<form action="http://xoxco.us6.list-manage1.com/subscribe/post?u=babb63411318969580dc46309&amp;id=86c21bc4e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
 							<p>
 								<label>
@@ -218,7 +218,6 @@
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
         	$(function(){
-        	
 	        	$('#tags').tagsInput({
 		        	"width": "53%",
 		        	"height": "70px",
@@ -227,6 +226,7 @@
 	        	});	
 
         	});
+ 
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 			</script>
