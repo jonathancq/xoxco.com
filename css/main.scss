@@ -823,11 +823,30 @@ h3.prelude{
 	   -webkit-box-shadow: inset 0 30px 100px #ccc;
 	   box-shadow:         inset 0 30px 100px #ccc;	
 	   
+
+
+
 	   .posts{
 		  width: 80%;
 		  margin-left: auto;
 		  margin-right: auto;	
 		}
+
+		.tile.new {
+			border-left: 10px solid #de20a2;
+		}
+
+		.new:before {
+			content: 'new';
+			color: #FFF;
+			background: #5dace2;
+			position: absolute;
+			top: -4px;
+			right: -4px;
+			padding: 7px 10px;
+			-webkit-transform: rotate(12deg);
+		}
+		
 
 	   .tile{
 			width: 29%;
@@ -853,7 +872,7 @@ h3.prelude{
 				left: 20px;
 				bottom: 25px;
 			}
-			:after{
+			&:after{
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -861,14 +880,20 @@ h3.prelude{
 				width: 100%;
 				display: block;
 				content: '';
-				height: 50px;
-				
+				height: 100px;
 				background-image: linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
 				background-image: -o-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
 				background-image: -moz-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
 				background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
 				background-image: -ms-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
-				background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.25, rgba(255,255,255,1)), color-stop(0.9, rgba(255,255,255,0)) );	
+				
+				background-image: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.25, rgba(255,255,255,1)),
+					color-stop(0.9, rgba(255,255,255,0))
+				);
 				
 			}
 		}
@@ -1133,20 +1158,6 @@ h3.prelude{
 
 /* Reader Aware Tricks */
 
-#recent-posts .tile.new {
-	border-left: 10px solid #de20a2;
-}
-
-.new:before {
-	content: 'new';
-	color: #FFF;
-	background: #5dace2;
-	position: absolute;
-	top: -4px;
-	right: -4px;
-	padding: 7px 10px;
-	-webkit-transform: rotate(12deg);
-}
 
 .first-visit-only {
 	display: none;
