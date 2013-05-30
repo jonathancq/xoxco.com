@@ -1324,33 +1324,8 @@ h3.prelude{
 				}
 			}
 		}
-	
 	}
-	/*
-	.dispatch-signup{
-			
-			.button{
-				float: left;
-			}
-			label{
-				display: block;
-				text-align: left;
-			}
-			form{
-				padding-left: 15%;
-				width: 75%;
-			}
-			input[type="text"],
-			input[type="email"]{
-				height: 30px;
-				width: 90%;
-				display: block;
-			}	
 
-
-		}
-
-	*/
 	.dispatch-signup form{
 		width: 100%;
 	}
@@ -1435,6 +1410,38 @@ h3.prelude{
 	.plugin-page{
 		.fork_me{
 			display: none;
+		}
+	}
+	#home_page{
+		#promo{
+
+		}
+		#packagr{
+			h1{
+				font-size: 1.5em;
+			}
+			.packagr-logo{
+				width: 100px;
+				margin: {
+					left: auto;
+					right: auto;
+				}	
+				
+			}
+	
+		}
+	
+		#recent-posts{
+			.posts{
+				.tile{
+		
+				}
+			}
+		}
+		#projects{
+			.title{
+				font-size: 1.5em;
+			}
 		}
 	}	
 }
