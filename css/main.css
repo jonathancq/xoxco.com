@@ -623,12 +623,23 @@ h3.prelude {
     width: 80%;
     margin-left: auto;
     margin-right: auto; }
+  #home_page #recent-posts .tile.new {
+    border-left: 10px solid #de20a2; }
+  #home_page #recent-posts .new:before {
+    content: 'new';
+    color: #FFF;
+    background: #5dace2;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    padding: 7px 10px;
+    -webkit-transform: rotate(12deg); }
   #home_page #recent-posts .tile {
-    width: 29%;
+    width: 30%;
     height: 360px;
     margin-bottom: 25px;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
+    margin-right: 1.0%;
+    margin-left: 1.0%;
     float: left;
     text-align: left;
     background: white;
@@ -645,7 +656,7 @@ h3.prelude {
       position: absolute;
       left: 20px;
       bottom: 25px; }
-    #home_page #recent-posts .tile :after {
+    #home_page #recent-posts .tile:after {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -653,13 +664,23 @@ h3.prelude {
       width: 100%;
       display: block;
       content: '';
-      height: 50px;
+      height: 100px;
       background-image: linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
       background-image: -o-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
       background-image: -moz-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
       background-image: -webkit-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
       background-image: -ms-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
       background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, white), color-stop(0.9, rgba(255, 255, 255, 0))); }
+#home_page #projects .title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: .1em;
+  padding: 0.2em;
+  float: left;
+  margin-top: 3%;
+  width: 400px;
+  max-width: 90%; }
 #home_page #projects .aware-js,
 #home_page #projects .breakpoints {
   padding-top: 50px;
@@ -672,14 +693,6 @@ h3.prelude {
   padding-bottom: 50px; }
 #home_page .breakpoints {
   background-image: url("../img/breakpoints_background.jpg"); }
-  #home_page .breakpoints .title {
-    font-size: 2em;
-    text-align: center;
-    font-weight: 100;
-    letter-spacing: .1em;
-    padding: 15px 35px;
-    float: left;
-    margin-top: 3%; }
 #home_page .tags-input {
   -moz-box-shadow: inset 0 30px 100px #ccc;
   -webkit-box-shadow: inset 0 30px 100px #ccc;
@@ -688,14 +701,6 @@ h3.prelude {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/aware_background.jpg"); }
-  #home_page .aware-js .title {
-    font-size: 2em;
-    text-align: center;
-    font-weight: 100;
-    letter-spacing: .1em;
-    padding: 15px 35px;
-    float: left;
-    margin-top: 3%; }
 
 /* /projects/code/tagsinput */
 #tags_input_page #plugin-title h1 {
@@ -832,19 +837,6 @@ h3.prelude {
   padding: 25px 100px; }
 
 /* Reader Aware Tricks */
-#recent-posts .tile.new {
-  border-left: 10px solid #de20a2; }
-
-.new:before {
-  content: 'new';
-  color: #FFF;
-  background: #5dace2;
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  padding: 7px 10px;
-  -webkit-transform: rotate(12deg); }
-
 .first-visit-only {
   display: none; }
 
@@ -852,22 +844,19 @@ h3.prelude {
   display: block; }
 
 @media all and (max-width: 1144px) {
+  #home_page #recent-posts .posts {
+    width: auto; }
+
   #contactus .inner {
     padding: 25px 20px; }
 
   .bottomtext {
     float: none;
     padding: 25px 20px; } }
+@media all and (max-width: 1010px) {
+  /*
+  #home_page #recent-posts .posts {*/ }
 @media all and (max-width: 999px) {
-  #recent-posts .tile {
-    width: 44%; }
-
-  .dispatch-signup form {
-    width: 90%; }
-
-  #recent-posts .posts {
-    width: 90%; }
-
   #nav .nav-links {
     width: 65%;
     margin-left: auto;
@@ -879,11 +868,19 @@ h3.prelude {
   .logo {
     float: none;
     margin-left: auto;
-    margin-right: auto; }
-
-  .breakpoints .title {
-    width: auto;
-    margin-left: auto; } }
+    margin-right: auto; } }
+@media all and (max-width: 900px) {
+  #home_page {
+    /*
+    #home_page #dispatch .dispatch-signup input[type="email"] {
+    */ }
+    #home_page #dispatch .dispatch-signup input[type="email"],
+    #home_page #dispatch .dispatch-signup input[type="text"] {
+      width: 100%; }
+    #home_page #recent-posts .posts .tile {
+      width: 46%; }
+    #home_page #projects .title {
+      font-size: 1.5em; } }
 @media all and (max-width: 699px) {
   .half {
     width: 100%; }
@@ -891,12 +888,27 @@ h3.prelude {
   body {
     font-size: 16px; }
 
-  #promo p {
-    font-size: 2em; }
+  .section .inner {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .section .inner .description {
+      width: auto; }
+  .section.fullbleed .inner .description {
+    width: auto; }
 
-  #packagr h1 {
-    font-size: 2em; }
-
+  /*
+  #nav{
+  	.nav-links{
+  		margin-top: 15px; 
+  		margin-bottom: 15px; 
+  		width: 100%;
+  		.button{
+  			padding-left: 10px;
+  			padding-right: 10px;
+  			font-size: 0.75em;
+  		}
+  	}
+  } */
   #nav .nav-links {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -906,6 +918,24 @@ h3.prelude {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 0.75em; }
+
+  #home_page #promo p {
+    font-size: 1.5em;
+    width: auto;
+    max-width: none;
+    padding-bottom: 10px; }
+  #home_page #promo .arrow-right {
+    padding-bottom: 0px; }
+  #home_page #packagr h1 {
+    font-size: 2em; }
+  #home_page #recent-posts .posts .tile {
+    width: auto;
+    height: 300px;
+    margin-bottom: 10px; }
+    #home_page #recent-posts .posts .tile .inner {
+      padding-top: 20px; }
+  #home_page #projects .title {
+    font-size: 2.0em; }
 
   .dispatch-signup form {
     width: 100%; }
@@ -956,22 +986,6 @@ h3.prelude {
 
   #tag-box {
     padding-top: 25px; }
-
-  #projects .aware-js,
-  #projects .breakpoints {
-    padding-top: 20px;
-    padding-bottom: 20px; }
-
-  .breakpoints .title,
-  .aware-js .title {
-    font-size: 2em;
-    text-align: center;
-    width: 80%;
-    font-weight: lighter;
-    padding: 15px 35px;
-    float: left;
-    margin-left: auto;
-    margin-top: auto; }
 
   .tags-box {
     padding-top: 25px; }
