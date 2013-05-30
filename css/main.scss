@@ -536,8 +536,7 @@ img{
 		}
 	}
 	.nav-links{
-		margin-top: 5px; 
- 
+	
 		padding-top: 15px;
 		a{
 			margin-top: 10px;
@@ -549,7 +548,9 @@ img{
 				border-radius: 6px;
 				color: #2B7FB9;
 				-webkit-box-shadow: none;
+				text-shadow: none;
 				box-shadow: none;
+				font-weight: normal;
 		   }
 	   }
 	}
@@ -929,7 +930,12 @@ h3.prelude{
 		padding-right: 3.75%;
 	
 		}	
-		.content-right{
+	  .tags-input{
+		  padding: {
+			  top: 25px;
+		  }
+	  }
+	  .content-right{
 			padding: {
 				bottom: 50px;
 			}
@@ -1092,9 +1098,7 @@ h3.prelude{
 }
 
 #footer {
-	-moz-box-shadow:    inset 0 0 30px #ccc;
-   -webkit-box-shadow: inset 0 0 30px #ccc;
-   box-shadow:         inset 0 0 30px #ccc;
+
 }
 
 .gray {
@@ -1198,13 +1202,18 @@ h3.prelude{
 
 
 @media all and (max-width: 960px) {
-	
+	.logo{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}		
 }
 
 @media all and (max-width: 900px) {
 	#home_page{
 		#dispatch{
 			.dispatch-signup{
+			
 				input[type="email"],
 				input[type="text"]{
 					width: 100%;
@@ -1252,19 +1261,7 @@ h3.prelude{
 		    }
 	    }
 	}
-	/*
-	#nav{
-		.nav-links{
-			margin-top: 15px; 
-			margin-bottom: 15px; 
-			width: 100%;
-			.button{
-				padding-left: 10px;
-				padding-right: 10px;
-				font-size: 0.75em;
-			}
-		}
-	} */
+
 	#nav .nav-links{
 		margin-top: 15px; 
 		margin-bottom: 15px; 
@@ -1295,6 +1292,7 @@ h3.prelude{
 			}
 	
 		}
+	
 		#recent-posts{
 			.posts{
 				.tile{
@@ -1316,9 +1314,43 @@ h3.prelude{
 			.title{
 				font-size: 2.0em;
 			}
+			.tags-input{
+				text-align: left;
+				div.tagsinput{
+					width: 100% !important;
+				}
+				div.tagsinput span.tag {
+					font-size: 2.0em;
+				}
+			}
 		}
 	
 	}
+	/*
+	.dispatch-signup{
+			
+			.button{
+				float: left;
+			}
+			label{
+				display: block;
+				text-align: left;
+			}
+			form{
+				padding-left: 15%;
+				width: 75%;
+			}
+			input[type="text"],
+			input[type="email"]{
+				height: 30px;
+				width: 90%;
+				display: block;
+			}	
+
+
+		}
+
+	*/
 	.dispatch-signup form{
 		width: 100%;
 	}
@@ -1337,9 +1369,7 @@ h3.prelude{
 	.dispatch-signup form{
 		padding-left: 0%;
 	}
-	#nav .nav-links .button{
-	
-	}
+
 	#recent-posts .tile{
 		width: 100%;
 		height: auto;
@@ -1374,10 +1404,6 @@ h3.prelude{
 
 	.tags-input .inner {
 		width: 90%;
-	}
-
-	#tag-box{
-		padding-top: 25px;	
 	}
 
 	.tags-box {
