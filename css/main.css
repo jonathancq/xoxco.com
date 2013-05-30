@@ -313,13 +313,20 @@ img {
 
 .section {
   background-color: #eeefef; }
+  .section .description {
+    margin-left: auto;
+    margin-right: auto; }
   .section .inner {
     padding-left: 3.75%;
     padding-right: 3.75%;
     padding-top: 50px;
     padding-bottom: 50px; }
+    .section .inner .description {
+      width: 80%; }
   .section.fullbleed .inner {
     padding: 0px; }
+    .section.fullbleed .inner .description {
+      width: 74%; }
 
 .clear {
   width: 100%;
@@ -387,6 +394,7 @@ img {
   padding-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
+  width: 70%;
   max-width: 960px; }
 .plugin-page.sections-purple .section {
   background-color: #201D31; }
@@ -417,13 +425,14 @@ img {
       -webkit-box-shadow: none;
       box-shadow: none; }
 .plugin-page #demos .inner {
-  width: 55%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
 .plugin-page #demos .demo {
   display: inline-block;
   width: 22%;
+  max-width: 12.5em;
   margin: 1%;
   padding-top: 13px;
   padding-bottom: 10px;
@@ -436,9 +445,9 @@ img {
   .plugin-page #demos .demo a {
     text-decoration: none;
     color: white;
-    font-size: 1.25em; }
+    font-size: 1.0em; }
   .plugin-page #demos .demo.long {
-    padding-right: 5%;
+    padding-right: 3em;
     width: 35%; }
   .plugin-page #demos .demo.github {
     background-image: url("../img/github_white.png"); }
@@ -538,168 +547,155 @@ h3.prelude {
     color: #5dace2; }
 
 /* / */
-#home_page {
-  /** **/ }
-  #home_page #promo {
-    background-repeat: no-repeat;
-    background-color: #000;
-    background-image: url("../img/grid_background.jpg");
-    background-size: 100%; }
-    #home_page #promo .inner {
-      padding-top: 25px;
-      padding-bottom: 25px; }
-    #home_page #promo p {
-      color: white;
-      font-weight: lighter;
-      font-size: 2.0em;
-      max-width: 23em;
-      margin: 0px auto; }
-    #home_page #promo .arrow-right {
-      font-weight: lighter; }
-  #home_page #nav {
-    background-image: url(../img/darkbgpattern.png); }
-    #home_page #nav .inner {
-      padding-top: 25px;
-      padding-bottom: 25px; }
-    #home_page #nav .nav-links {
-      margin-top: 5px;
-      margin-bottom: 15px;
-      padding-top: 15px; }
-      #home_page #nav .nav-links a {
-        margin-top: 10px;
-        width: 15%;
-        padding-top: 10px;
-        padding-bottom: 6px; }
-  #home_page #packagr {
-    background-repeat: no-repeat;
-    background-image: url("../img/packagr_background.jpg"); }
-    #home_page #packagr h1 {
-      font-size: 3.0em;
-      max-width: 18em;
-      margin: 0px auto; }
-  #home_page #dispatch {
-    color: #eceded;
-    background-image: url("../img/dispatch_background.jpg");
-    background-position: center center;
-    -moz-box-shadow: inset 0 30px 100px #000;
-    -webkit-box-shadow: inset 0 30px 100px #000;
-    box-shadow: inset 0 30px 100px #000; }
-    #home_page #dispatch .description {
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6em; }
-    #home_page #dispatch .dispatch-books {
-      float: left;
-      width: 45%; }
-    #home_page #dispatch .dispatch-books img {
-      display: block;
-      float: right; }
-    #home_page #dispatch .dispatch-signup .button {
-      float: left; }
-    #home_page #dispatch .dispatch-signup label {
-      display: block;
-      text-align: left; }
-    #home_page #dispatch .dispatch-signup form {
-      padding-left: 15%;
-      width: 75%; }
-    #home_page #dispatch .dispatch-signup input[type="text"],
-    #home_page #dispatch .dispatch-signup input[type="email"] {
-      height: 30px;
-      width: 90%;
-      display: block; }
-  #home_page #recent-posts {
-    color: #666;
-    background-image: url("../img/blog_background.jpg");
-    background-position: center center;
-    -moz-box-shadow: inset 0 30px 100px #ccc;
-    -webkit-box-shadow: inset 0 30px 100px #ccc;
-    box-shadow: inset 0 30px 100px #ccc; }
-    #home_page #recent-posts .posts {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto; }
-    #home_page #recent-posts .tile {
-      width: 29%;
-      height: 360px;
-      margin-bottom: 25px;
-      margin-right: 1.5%;
-      margin-left: 1.5%;
-      float: left;
-      text-align: left;
-      background: white;
-      position: relative;
-      border-left: 10px solid #5dace2;
-      font-weight: lighter;
-      -webkit-box-shadow: 0 8px 6px -6px #ccc;
-      -moz-box-shadow: 0 8px 6px -6px #ccc;
-      box-shadow: 0 8px 6px -6px #ccc;
-      overflow: hidden; }
-      #home_page #recent-posts .tile .inner {
-        padding: 35px 25px; }
-      #home_page #recent-posts .tile .button {
-        position: absolute;
-        left: 20px;
-        bottom: 25px; }
-      #home_page #recent-posts .tile :after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        display: block;
-        content: '';
-        height: 50px;
-        background-image: linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
-        background-image: -o-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
-        background-image: -moz-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
-        background-image: -webkit-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
-        background-image: -ms-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
-        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, white), color-stop(0.9, rgba(255, 255, 255, 0))); }
-  #home_page #projects .aware-js,
-  #home_page #projects .breakpoints {
-    padding-top: 50px;
-    color: #ffffff;
+#home_page #promo {
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-image: url("../img/grid_background.jpg");
+  background-size: 100%; }
+  #home_page #promo .inner {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  #home_page #promo p {
+    color: white;
     font-weight: lighter;
+    font-size: 2.0em;
+    max-width: 80%;
+    margin: 0px auto; }
+  #home_page #promo .arrow-right {
+    font-weight: lighter; }
+#home_page #nav {
+  background-image: url(../img/darkbgpattern.png); }
+  #home_page #nav .inner {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  #home_page #nav .nav-links {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-top: 15px; }
+    #home_page #nav .nav-links a {
+      margin-top: 10px;
+      width: 15%;
+      padding-top: 10px;
+      padding-bottom: 6px; }
+#home_page #packagr {
+  background-repeat: no-repeat;
+  background-image: url("../img/packagr_background.jpg"); }
+  #home_page #packagr h1 {
+    font-size: 3.0em;
+    max-width: 18em;
+    margin: 0px auto; }
+#home_page #dispatch {
+  color: #eceded;
+  background-image: url("../img/dispatch_background.jpg");
+  background-position: center center;
+  -moz-box-shadow: inset 0 30px 100px #000;
+  -webkit-box-shadow: inset 0 30px 100px #000;
+  box-shadow: inset 0 30px 100px #000; }
+  #home_page #dispatch .description {
+    line-height: 1.6em; }
+  #home_page #dispatch .dispatch-books {
+    float: left;
+    width: 45%; }
+  #home_page #dispatch .dispatch-books img {
+    display: block;
+    float: right; }
+  #home_page #dispatch .dispatch-signup .button {
+    float: left; }
+  #home_page #dispatch .dispatch-signup label {
+    display: block;
+    text-align: left; }
+  #home_page #dispatch .dispatch-signup form {
+    padding-left: 15%;
+    width: 75%; }
+  #home_page #dispatch .dispatch-signup input[type="text"],
+  #home_page #dispatch .dispatch-signup input[type="email"] {
+    height: 30px;
+    width: 90%;
+    display: block; }
+#home_page #recent-posts {
+  color: #666;
+  background-image: url("../img/blog_background.jpg");
+  background-position: center center;
+  -moz-box-shadow: inset 0 30px 100px #ccc;
+  -webkit-box-shadow: inset 0 30px 100px #ccc;
+  box-shadow: inset 0 30px 100px #ccc; }
+  #home_page #recent-posts .posts {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+  #home_page #recent-posts .tile {
+    width: 29%;
+    height: 360px;
+    margin-bottom: 25px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    float: left;
     text-align: left;
-    padding-left: 3.75%;
-    padding-right: 3.75%; }
-    #home_page #projects .aware-js .description,
-    #home_page #projects .breakpoints .description {
-      width: 75%; }
-    #home_page #projects .aware-js .content-right,
-    #home_page #projects .breakpoints .content-right {
-      padding-bottom: 50px; }
-  #home_page #projects .breakpoints {
-    background-image: url("../img/breakpoints_background.jpg"); }
-    #home_page #projects .breakpoints .title {
-      font-size: 2em;
-      text-align: center;
-      width: 50%;
-      font-weight: 100;
-      letter-spacing: .1em;
-      padding: 15px 35px;
-      float: left;
-      margin-left: 22%;
-      margin-top: 3%; }
-  #home_page #projects .tags-input {
-    -moz-box-shadow: inset 0 30px 100px #ccc;
-    -webkit-box-shadow: inset 0 30px 100px #ccc;
-    box-shadow: inset 0 30px 100px #ccc; }
-  #home_page #projects .aware-js {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("../img/aware_background.jpg"); }
-    #home_page #projects .aware-js .title {
-      font-size: 2em;
-      text-align: center;
-      width: 50%;
-      font-weight: 100;
-      letter-spacing: .1em;
-      padding: 15px 35px;
-      float: left;
-      margin-left: 22%;
-      margin-top: 3%; }
+    background: white;
+    position: relative;
+    border-left: 10px solid #5dace2;
+    font-weight: lighter;
+    -webkit-box-shadow: 0 8px 6px -6px #ccc;
+    -moz-box-shadow: 0 8px 6px -6px #ccc;
+    box-shadow: 0 8px 6px -6px #ccc;
+    overflow: hidden; }
+    #home_page #recent-posts .tile .inner {
+      padding: 35px 25px; }
+    #home_page #recent-posts .tile .button {
+      position: absolute;
+      left: 20px;
+      bottom: 25px; }
+    #home_page #recent-posts .tile :after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: block;
+      content: '';
+      height: 50px;
+      background-image: linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
+      background-image: -o-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
+      background-image: -moz-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
+      background-image: -webkit-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
+      background-image: -ms-linear-gradient(bottom, white 25%, rgba(255, 255, 255, 0) 90%);
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, white), color-stop(0.9, rgba(255, 255, 255, 0))); }
+#home_page #projects .aware-js,
+#home_page #projects .breakpoints {
+  padding-top: 50px;
+  color: #ffffff;
+  font-weight: lighter;
+  text-align: left;
+  padding-left: 3.75%;
+  padding-right: 3.75%; }
+#home_page #projects .content-right {
+  padding-bottom: 50px; }
+#home_page .breakpoints {
+  background-image: url("../img/breakpoints_background.jpg"); }
+  #home_page .breakpoints .title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: .1em;
+    padding: 15px 35px;
+    float: left;
+    margin-top: 3%; }
+#home_page .tags-input {
+  -moz-box-shadow: inset 0 30px 100px #ccc;
+  -webkit-box-shadow: inset 0 30px 100px #ccc;
+  box-shadow: inset 0 30px 100px #ccc; }
+#home_page .aware-js {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/aware_background.jpg"); }
+  #home_page .aware-js .title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: .1em;
+    padding: 15px 35px;
+    float: left;
+    margin-top: 3%; }
 
 /* /projects/code/tagsinput */
 #tags_input_page #plugin-title h1 {
@@ -711,10 +707,6 @@ h3.prelude {
   padding: 0px; }
 #tags_input_page #plugin-title h3 {
   margin-bottom: 0; }
-#tags_input_page #plugin-description .inner {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto; }
 #tags_input_page #plugin-description img {
   display: block;
   margin: 50px auto 10px;
@@ -747,19 +739,13 @@ h3.prelude {
 
 /** **/
 .tags-input .inner {
-  /*width: 60%;*/
-  /*width: 60%;*/
-  margin-left: auto;
-  margin-right: auto; }
-.tags-input .description {
-  /* width: 75%; */
-  /*width: 55%;*/
   margin-left: auto;
   margin-right: auto; }
 .tags-input .content-right {
   padding-bottom: 50px;
   padding-right: 3.75%; }
 
+/* differs from the class above. this is the actual tagsinput box generated by the tags plugin */
 .tags-box {
   padding-top: 50px; }
   .tags-box .tag {
@@ -866,21 +852,12 @@ h3.prelude {
   display: block; }
 
 @media all and (max-width: 1144px) {
-  #recent-posts .tile {
-    width: 44%;
-    margin-left: 2%;
-    margin-right: 2%; }
-
   #contactus .inner {
     padding: 25px 20px; }
 
   .bottomtext {
     float: none;
-    padding: 25px 20px; }
-
-  .breakpoints .title,
-  .aware-js .title {
-    font-size: 1.5em; } }
+    padding: 25px 20px; } }
 @media all and (max-width: 999px) {
   #recent-posts .tile {
     width: 44%; }
@@ -920,11 +897,6 @@ h3.prelude {
   #packagr h1 {
     font-size: 2em; }
 
-  #dispatch .description {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto; }
-
   #nav .nav-links {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -933,7 +905,7 @@ h3.prelude {
   #nav .nav-links .button {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 0.75rem; }
+    font-size: 0.75em; }
 
   .dispatch-signup form {
     width: 100%; }
@@ -982,17 +954,13 @@ h3.prelude {
   .tags-input .inner {
     width: 90%; }
 
-  .tags-input .description {
-    width: auto; }
-
   #tag-box {
     padding-top: 25px; }
 
   #projects .aware-js,
   #projects .breakpoints {
     padding-top: 20px;
-    padding-bottom: 20px;
-    /* 		text-align: center; */ }
+    padding-bottom: 20px; }
 
   .breakpoints .title,
   .aware-js .title {
@@ -1004,10 +972,6 @@ h3.prelude {
     float: left;
     margin-left: auto;
     margin-top: auto; }
-
-  .breakpoints .description,
-  .aware-js .description {
-    width: auto; }
 
   .tags-box {
     padding-top: 25px; }
@@ -1030,3 +994,19 @@ h3.prelude {
 
   #mainwrapper {
     margin-left: 2em; } }
+@media all and (max-width: 460px) {
+  .plugin-page .fork_me {
+    display: none; } }
+@media all and (max-width: 400px) {
+  .plugin-page .fork_me {
+    display: none; }
+  .plugin-page .nav-links a {
+    display: block;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 23%; } }
