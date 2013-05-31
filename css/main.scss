@@ -617,11 +617,12 @@ img{
 		}
 	}	
 	.short-preview-title{
-		height: 40px;
+		height: 60px;
 		background-color: #ffffff;
 		color: #000000;
 		padding: 5px;
 		padding-top: 10px;	
+		overflow: hidden;
 	}
 	#posts .content-right{
 		margin-right: 1.875%;
@@ -1210,15 +1211,17 @@ h3.prelude{
 }
 
 @media all and (max-width: 900px) {
+
 	#home_page{
 		#dispatch{
 			.dispatch-signup{
-			
+				
 				input[type="email"],
 				input[type="text"]{
 					width: 100%;
 				}	
-			}	
+			}
+				
 		}
 		#recent-posts{
 			.posts{
@@ -1232,9 +1235,10 @@ h3.prelude{
 				font-size: 1.5em;
 			}
 		}
-		/*
-		#home_page #dispatch .dispatch-signup input[type="email"] {
-		*/
+	}
+	
+	.plugin-pag{
+		
 	}	
 }
 @media all and (max-width: 815px) {
@@ -1339,57 +1343,10 @@ h3.prelude{
 		}
 	}
 
-	.dispatch-signup form{
-		width: 100%;
-	}
-	#dispatch .dispatch-books{	
-		display: none;
-	}
-	#dispatch .dispatch-books img{
-		margin-left: auto;
-		margin-right: auto;
-		float: none;
-		width: 50%;
-	}
-	#dispatch .dispatch-signup{
-		width: 100%;	
-	}
-	.dispatch-signup form{
-		padding-left: 0%;
-	}
-
-	#recent-posts .tile{
-		width: 100%;
-		height: auto;
-	}
-	#recent-posts .posts{
-		width: auto;
-		
-	}
-	.tile h4{
-
-	}	
-	#recent-posts .tile .button{
-		left: 15px;
-		bottom: 15px;
-	}
-	#recent-posts .inner{
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#recent-posts .tile{
-		margin-left: auto;
-		margin-right: auto;	
-		width: 98%;
-	}
-	#recent-posts .tile .inner {
-		padding: 15px;
-	}
-
 	.tile .preview-post {
 		font-size: 1em;
 	}
-
+	
 	.tags-input .inner {
 		width: 90%;
 	}
@@ -1400,6 +1357,7 @@ h3.prelude{
 	.tags-box .tag {
 		font-size: 2em;
 	}
+	
 	.getintouch {
 	float: left;
 	width: 100px;
@@ -1432,6 +1390,24 @@ h3.prelude{
 			  	width: 70%;
 		  	}
 		 }
+		}
+		#posts{
+			.short-preview{
+				width: auto;
+				.short-preview-title{
+					height: 40px;
+				}
+			}
+		}
+		#dispatch{
+			.dispatch-signup{
+				form{
+					width: auto;
+					padding: {
+						left: 0px;
+					}
+				}	
+			}
 		}
 	}
 	#home_page{

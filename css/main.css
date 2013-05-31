@@ -479,11 +479,12 @@ img {
       text-decoration: none;
       font-weight: lighter; }
   .plugin-page .short-preview-title {
-    height: 40px;
+    height: 60px;
     background-color: #ffffff;
     color: #000000;
     padding: 5px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    overflow: hidden; }
   .plugin-page #posts .content-right {
     margin-right: 1.875%;
     margin-top: 15px; }
@@ -883,17 +884,13 @@ h3.prelude {
     margin-left: auto;
     margin-right: auto; } }
 @media all and (max-width: 900px) {
-  #home_page {
-    /*
-    #home_page #dispatch .dispatch-signup input[type="email"] {
-    */ }
-    #home_page #dispatch .dispatch-signup input[type="email"],
-    #home_page #dispatch .dispatch-signup input[type="text"] {
-      width: 100%; }
-    #home_page #recent-posts .posts .tile {
-      width: 46%; }
-    #home_page #projects .title {
-      font-size: 1.5em; } }
+  #home_page #dispatch .dispatch-signup input[type="email"],
+  #home_page #dispatch .dispatch-signup input[type="text"] {
+    width: 100%; }
+  #home_page #recent-posts .posts .tile {
+    width: 46%; }
+  #home_page #projects .title {
+    font-size: 1.5em; } }
 @media all and (max-width: 815px) {
   .plugin-page #demos .demo {
     max-width: none;
@@ -950,47 +947,6 @@ h3.prelude {
     #home_page #projects .tags-input div.tagsinput span.tag {
       font-size: 2.0em; }
 
-  .dispatch-signup form {
-    width: 100%; }
-
-  #dispatch .dispatch-books {
-    display: none; }
-
-  #dispatch .dispatch-books img {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-    width: 50%; }
-
-  #dispatch .dispatch-signup {
-    width: 100%; }
-
-  .dispatch-signup form {
-    padding-left: 0%; }
-
-  #recent-posts .tile {
-    width: 100%;
-    height: auto; }
-
-  #recent-posts .posts {
-    width: auto; }
-
-  #recent-posts .tile .button {
-    left: 15px;
-    bottom: 15px; }
-
-  #recent-posts .inner {
-    margin-left: auto;
-    margin-right: auto; }
-
-  #recent-posts .tile {
-    margin-left: auto;
-    margin-right: auto;
-    width: 98%; }
-
-  #recent-posts .tile .inner {
-    padding: 15px; }
-
   .tile .preview-post {
     font-size: 1em; }
 
@@ -1026,6 +982,13 @@ h3.prelude {
     width: 46%; }
     .plugin-page #demos .demo.long {
       width: 70%; }
+  .plugin-page #posts .short-preview {
+    width: auto; }
+    .plugin-page #posts .short-preview .short-preview-title {
+      height: 40px; }
+  .plugin-page #dispatch .dispatch-signup form {
+    width: auto;
+    padding-left: 0px; }
 
   #home_page #packagr h1 {
     font-size: 1.5em; }
