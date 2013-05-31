@@ -1,0 +1,105 @@
+/* Smartphone-ish */
+@media all and (max-width: 480px) {
+	
+
+	#home_page {	
+		#promo p {
+			font-size: 1.5em;
+		}
+		
+		#packagr h1 {
+			font-size: 1.5em;
+		}
+	}
+
+	#nav .nav-links .button{
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 0.75em;
+	}	
+
+
+	.fork_me {
+		display: none;
+	}
+
+	
+}
+
+/* Tablet-ish */
+@media all and (max-width: 768px) {
+	
+	.dispatch-books {
+		display: none;
+	}
+	
+	.half {
+		width: auto;
+		float: none;
+		clear: both;
+	}
+
+
+
+}
+
+/* Smaller than an ipad */
+@media all and (max-width: 1024px) {
+	
+	body {
+		font-size: 16px;
+	}
+	
+}
+
+/* Bigger than a tablet */
+@media all and (min-width: 768px) {
+
+	.dispatch-signup {
+		width: 45%;
+		margin-left: 5%;
+	}
+
+	#dispatch p.description {
+		text-align: center;
+	}
+
+	.dispatch-signup {
+		max-width: 500px; 
+	}
+	
+	.tile {
+		width: 45%;
+		margin: 2.5%;
+		float: left;
+	}
+	
+	#projects .half {
+		width: 40%;
+		padding: 5%;
+	}
+
+
+	#plugin-description{
+		
+		h1 { 
+			font-size: 5em;
+			line-height: 1em;
+		}
+	}
+	
+		
+}
+
+/* Desktop-ish */
+@media all and (min-width: 900px) {
+	
+	.tile {
+		float: left;
+		width: 30%;
+		margin: 1.5%;
+		max-height: 360px;
+	}
+}
+
+

@@ -1,0 +1,321 @@
+
+
+@media all and (max-width: 1144px) {
+
+	#home_page{
+		#recent-posts{
+			.posts{
+				width: auto;
+			}
+		}
+	}	
+	
+	#contactus{
+		.inner{
+			padding: 25px 20px;
+		}	
+	} 
+	.bottomtext {
+		float: none;
+		padding: 25px 20px;
+	}
+	
+
+}
+@media all and (max-width: 1010px) {
+/*
+#home_page #recent-posts .posts {*/
+
+}
+@media all and (max-width: 999px) {
+
+	#nav .nav-links{
+		width: 65%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#nav .half{
+		width: 100%;
+	}
+	.logo{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+
+
+@media all and (max-width: 960px) {
+	.logo{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}		
+}
+
+@media all and (max-width: 900px) {
+
+
+
+
+	#home_page{
+		#dispatch{
+			.dispatch-signup{
+				
+				input[type="email"],
+				input[type="text"]{
+					width: 100%;
+				}	
+			}
+				
+		}
+		#recent-posts{
+			.posts{
+				.tile{
+					width: 46%;
+				}
+			}
+		}
+		#projects{
+			.title{
+				font-size: 1.5em;
+			}
+		}
+	}
+	
+	#plugin-title {
+		h1 {
+			font-size: 3em;
+		}
+		
+	}	
+}
+@media all and (max-width: 815px) {
+	.plugin-page{
+		#demos{
+		 .demo{
+		  	max-width: none;
+		  	width: 46%;
+		  	&.long{
+			  	width: 70%;
+		  	}
+		 }
+	  }
+	}	
+}
+@media all and (max-width: 699px) {
+	.half{
+		width: 100%;
+	}
+	
+	body{
+		font-size: 16px;
+	}
+	.section{
+		
+	   .inner{
+			padding-top: 25px;
+			padding-bottom: 25px;	
+			width: auto;
+			.description{
+				width: auto;
+			}
+	    }
+	    &.fullbleed .inner{
+		    .description{
+			    width: auto;
+		    }
+	    }
+	}
+
+	#nav .nav-links{
+		margin-top: 15px; 
+		margin-bottom: 15px; 
+		width: 100%;
+	}
+	
+	#nav .nav-links .button{
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 0.75em;
+	}
+
+	#home_page{
+		#promo{
+			p{
+				font-size: 1.5em;
+			}
+			.arrow-right{
+				padding-bottom: 0px;
+			}
+		}
+		#packagr{
+			h1{
+				font-size: 2em;
+			}
+	
+		}
+	
+		#recent-posts{
+			.posts{
+				.tile{
+					width: auto;
+					height: 300px;
+					margin: {
+						bottom: 10px;
+					}
+					.inner{
+						padding:{
+							top: 20px;
+						}	
+					}
+			
+				}
+			}
+		}
+		#projects{
+			.title{
+				font-size: 2.0em;
+			}
+			.tags-input{
+				text-align: left;
+				div.tagsinput{
+					width: 100% !important;
+				}
+				div.tagsinput span.tag {
+					font-size: 2.0em;
+				}
+			}
+		}
+	}
+
+	.tile .preview-post {
+		font-size: 1em;
+	}
+	
+	.tags-input .inner {
+		width: 90%;
+	}
+
+	.tags-box {
+		padding-top: 25px;
+	}
+	.tags-box .tag {
+		font-size: 2em;
+	}
+	
+	.getintouch {
+	float: left;
+	width: 100px;
+	font-size: 1.2em;
+	padding: 15px 15px -10px 15px;}
+	
+	#contactus .inner{
+	padding: 25px 20px;
+	}
+	.bottomtext {
+	float: none;
+		padding: 25px 20px;
+		}
+	#mainwrapper {
+		margin-left:2em;
+	}
+}
+
+
+@media all and (max-width: 460px){
+
+
+	#plugin-title {
+		h1 {
+			font-size: 2.5em;
+		}
+		
+	}	
+	.plugin-page{
+		.fork_me{
+			display: none;
+		}
+		#demos{
+		 .demo{
+		  	max-width: none;
+		  	width: 46%;
+		  	&.long{
+			  	width: 70%;
+		  	}
+		 }
+		}
+		#posts{
+			.short-preview{
+				width: auto;
+				.short-preview-title{
+					height: 40px;
+				}
+			}
+		}
+		#dispatch{
+			.dispatch-signup{
+				form{
+					width: auto;
+					padding: {
+						left: 0px;
+					}
+				}	
+			}
+		}
+	}
+	#home_page{
+		#packagr{
+			h1{
+				font-size: 1.5em;
+			}
+			.packagr-logo{
+				width: 100px;
+				margin: {
+					left: auto;
+					right: auto;
+				}	
+				
+			}
+	
+		}
+	
+		#recent-posts{
+			.posts{
+				.tile{
+		
+				}
+			}
+		}
+		#projects{
+			.title{
+				font-size: 1.5em;
+			}
+		}
+	}	
+}
+@media all and (max-width: 400px){
+	.plugin-page{
+		.fork_me{
+			display: none;
+		}
+		.nav-links{
+			a{
+				display: block;
+				float: left;
+				margin: {
+					left: 1%;
+					right: 1%;
+				}
+				padding: {
+					top: 7px;
+					bottom: 7px;
+					right: 0px;
+					left: 0px;
+				}
+				width: 23%;
+			}	
+		}
+	}
+}

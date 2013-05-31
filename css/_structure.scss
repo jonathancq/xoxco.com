@@ -1,0 +1,455 @@
+
+body,html {
+	font-size: 20px;
+    line-height: 1.4;
+    font-weight: 100;    
+	font-family: "Avenir", "Helvetica", "Sans Serif";
+}
+
+img{
+	display: inline-block;
+	max-width: 100%;
+}
+
+#main{
+	max-width: 1800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#nav{
+	text-align: center;
+
+	background-image:url(../img/darkbgpattern.png);
+
+	.nav-links{
+	
+		margin-top: 5px; 
+		margin-bottom: 15px; 
+		padding-top: 15px;
+		
+		a{
+			margin-top: 10px;
+			width: 15%;
+			padding-top: 10px;
+			padding-bottom: 6px;
+		}
+	}
+		
+}
+
+
+.section{
+
+	&.centered {
+		text-align: center; 
+	}	
+	
+	background-color: #eeefef;
+
+   .description{
+   	   max-width: 33em;
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+   .inner{
+   		
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-top: 1.25em;
+		padding-bottom: 1.25em;	
+		
+    }
+    &.fullbleed .inner{
+	    padding: 0px;
+    }
+}
+
+.clear{
+	width: 100%;
+	clear: both;
+}
+.half{
+	width: 50%;
+	float: left;
+}
+.content-right *{
+	display: block;
+	text-align: right;
+	clear: both;
+}
+.logo{
+	max-width: 100%;
+}
+.smaller {
+	font-size: smaller;
+}
+
+.light-font .section{
+	color: #ffffff;	
+}
+
+
+.aware-status{
+
+	width: 55%;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	font-weight: lighter;
+	a{
+		color: white;	
+	}
+}
+
+
+
+#plugin-description{
+
+	h1{
+		font-size: 2.5em;
+		margin: 0px;
+		padding: 0px;  
+		text-align: center;		
+	}
+	h2{
+		margin: 0px;
+		padding: 0px;  
+		text-align: center;
+	}
+	h3{
+		margin-bottom: 0;
+		text-align: center;
+	}
+	p { 
+/* 		margin-top: 0; */
+	} 
+
+}
+
+
+.plugin-page{
+	a { color: #FFF; }
+
+	
+	&.sections-purple{
+		 .section{
+			background-color: #201D31;
+		}
+	}
+	&.breakpoints-background{
+		background: #212121;
+		background-image: url('../img/breakpoints_big_bg.png');
+		background-repeat: no-repeat;
+		.section{
+			background: none;
+		}	
+	} 
+
+	#nav{
+		background: #ffffff;
+		margin-top:20px;
+	}
+	.nav-links{
+		text-align: center;
+		padding: 0px 1em;
+		
+		a{
+			margin-top: 10px;
+			padding: 10px 10px 7px;
+			display: inline-block;
+			&.button {
+				background: #FFF;
+				border-radius: 6px;
+				color: #2B7FB9;
+				-webkit-box-shadow: none;
+				text-shadow: none;
+				box-shadow: none;
+				font-weight: normal;
+		   }
+	   }
+	}
+	
+	#demos{
+		.inner{
+	
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;		
+		}
+		.demo{
+			float: left;
+			width: 22%;
+			max-width: 12.5em;
+			margin: 1%;
+			padding-top: 13px;
+			padding-bottom: 10px;
+			padding-left: 1%;
+			padding-right: 1%;
+			
+			background-repeat: no-repeat;
+			background-position-x: 97%;
+			background-position-y: 50%;
+			background-size: 2.0em;
+			
+			a{
+				text-decoration: none;
+				color: white;
+				font-size: 1.0em;
+			}
+
+			&.long{
+				padding-right: 3em;
+				width: 35%;	
+			}
+			&.github{
+				background-image: url('../img/github_white.png');
+			}
+			&.github.white-background{
+				background-image: url('../img/github.png');	
+			}
+			&.js-fiddle{
+				background-image: url('../img/jsfiddle.png');	
+			}
+		}
+	}
+	
+	.short-preview{
+		float: left;
+		width: 30%;
+		padding-left: 1.5%;
+		padding-right: 1.5%;
+		margin-bottom: 10px;
+		position: relative;
+		img{
+			width: 100%;
+		}
+		a{
+			text-decoration: none;
+			font-weight: lighter;
+		}
+	}	
+	.short-preview-title{
+		height: 60px;
+		background-color: #ffffff;
+		color: #000000;
+		padding: 5px;
+		padding-top: 10px;	
+		overflow: hidden;
+	}
+	#posts .content-right{
+		margin-right: 1.875%;
+		margin-top: 15px;
+	}	
+	
+	#dispatch{
+		color: #eceded;
+		background-image: url('../img/dispatch_background.jpg');
+		background-position: center center;
+		-moz-box-shadow:    inset 0 30px 100px #000;
+	   -webkit-box-shadow: inset 0 30px 100px #000;
+	   box-shadow:         inset 0 30px 100px #000;
+	   text-align: left;
+	   
+	   .description{
+			line-height: 1.6em;
+			text-align:left;
+		}
+		.dispatch-signup{
+
+			form{
+				padding-left: 15%;
+				width: 75%;
+			}
+
+			.button{
+				float: left;
+			}
+			label{
+				display: block;
+				text-align: left;				
+			}
+			input[type="text"],
+			input[type="email"]{
+				height: 30px;
+				width: 90%;
+				display: block;
+			}
+		}
+		.dispatch-info
+		{
+			padding-top: 1em;
+		}
+}
+}
+/** **/
+.button{
+
+	font-size: 0.8em;
+	background: #5dace2;
+	color: white;
+	border:0px;
+	text-decoration: none;
+	padding: 7px 20px 7px 20px;
+	margin-right: 8px;
+	
+	-webkit-box-shadow: 4px 3px 0px #2B7FB9;
+	-moz-box-shadow:    4px 3px 0px #2B7FB9;
+	box-shadow:         4px 3px 0px #2B7FB9;
+	text-shadow: 1px 1px 1px #2B7FB9;
+	
+	&:hover{
+		background-color: #72c2f9;	
+	}
+}
+
+.arrow-right{
+	font-weight: lighter;
+	color: #666;
+	font-size: 1.25em;
+	text-decoration: none;
+	padding-right: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-repeat: no-repeat;
+	background-image: url('../img/grayarrow.png');
+	background-position: right center;
+	background-size: contain;
+}
+.arrow-right.white{
+	color: white;	
+	background-image: url('../img/whitearrow.png');
+}
+
+
+
+h3.prelude{
+	font-size: 1.5em;
+	font-weight: bolder;
+	color: #666;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+	a{
+		text-decoration: none;
+		color: #5dace2;
+	}
+} 
+
+
+
+/* /projects/code/tagsinput */
+#tags_input_page{
+  
+  
+
+  
+  #plugin-description{
+
+  	img{
+		display: block;
+		margin: 50px auto 10px;
+		max-width: 100%;
+	}
+  }
+}
+
+
+
+/** **/
+.tags-input{
+
+}
+/* differs from the class above. this is the actual tagsinput box generated by the tags plugin */
+
+.tags-box{
+	padding-top: 50px;	
+		.tag{
+		
+		float: left;
+		margin-top: 10px;
+		margin-left: 1%;
+		margin-right: 1%;
+		
+		padding: 7px 25px 0px 25px;
+		font-size: 2.0em;
+		background-color: #B5ED89;
+		
+		border: 2px solid #68AD35;
+		border-radius: 5px;
+		position: relative;
+		.close-tag{
+			font-weight: lighter;
+			right: 5px;
+			top: -3px;
+			position: absolute;
+			font-size: 18px;
+			color: #6BAF38;
+		}
+	}
+}
+
+
+
+
+
+
+/** **/
+
+.social{
+	width: 340px;
+	margin-left: auto;
+	margin-right: auto;	
+	a{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		margin-left: 15px;
+		margin-right: 15px;
+		background-repeat: no-repeat;	
+		background-size: contain;
+		&.email{
+			background-image: url('../img/mail.png');	
+			background-position-y: 4px;
+		
+		}
+		&.twitter{
+			background-image: url('../img/Twitter.png');	
+		}
+		&.facebook{
+			background-image: url('../img/facebook.png');	
+			width: 25px;
+			height:35px;
+		}
+		&.github{
+			background-image: url('../img/github.png');
+			height:38px;	
+		}
+
+	}
+	
+}
+
+#footer {
+
+	text-align: center;
+
+}
+
+.gray {
+	color: #5dace2;
+}
+
+#profiles {
+	max-width: 800px;
+	margin: 0px auto;
+	padding-bottom: 20px;
+}
+
+.bottomtext {
+	float: none;
+		padding: 25px 100px;
+}
+

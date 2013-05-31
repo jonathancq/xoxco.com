@@ -1,0 +1,11 @@
+
+/* Reader Aware Tricks */
+
+.first-visit-only {
+	display: none;
+}
+
+.first-visit .first-visit-only {
+	display: block;
+}
+

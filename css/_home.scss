@@ -1,0 +1,209 @@
+
+/* / */
+
+	#promo{
+		text-align: center;
+		background-repeat: no-repeat;
+		background-color: #000;
+		background-image: url('../img/grid_background.jpg');
+		background-size: 100%;
+		
+		p{
+			color: white;
+			font-weight: lighter;
+			font-size: 2.0em;	
+			max-width: 23em;
+			margin: 0px auto;
+	   }
+	   .arrow-right{
+		   font-weight: lighter;
+	   }	
+	}
+	
+	
+	#packagr{
+		text-align: center;
+		background-repeat: no-repeat;
+		background-image: url('../img/packagr_background.jpg');
+		h1{
+		    font-size: 3.0em;
+		    max-width: 18em;
+		    margin: 0px auto;
+		}	
+    }
+	
+	#dispatch{
+		color: #eceded;
+		background-image: url('../img/dispatch_background.jpg');
+		background-position: center center;
+		-moz-box-shadow:    inset 0 30px 100px #000;
+	   -webkit-box-shadow: inset 0 30px 100px #000;
+	   box-shadow:         inset 0 30px 100px #000;
+	   
+
+	   .dispatch-logo { 
+		   text-align: center;
+		   
+	   }
+		.dispatch-books{
+			float: left;
+			img{
+				display: block;
+				float: right;
+			}
+		}
+		.dispatch-signup{
+			
+			label{
+				display: block;
+				text-align: left;
+			}
+			form{
+
+			}
+			input[type="text"],
+			input[type="email"]{
+				width: 95%;
+				border: 0;
+				padding: 2.5%;
+				display: block;
+			}	
+
+
+		}
+	}
+	
+	#recent-posts{
+		color: #666;
+		background-image: url('../img/blog_background.jpg');
+		background-position: center center;
+		-moz-box-shadow:    inset 0 30px 100px #ccc;
+	   -webkit-box-shadow: inset 0 30px 100px #ccc;
+	   box-shadow:         inset 0 30px 100px #ccc;	
+
+	}
+
+	.tile.new {
+		border-left: 10px solid #de20a2;
+	}
+
+	.new:before {
+		content: 'new';
+		color: #FFF;
+		background: #5dace2;
+		position: absolute;
+		top: -4px;
+		right: -4px;
+		padding: 7px 10px;
+		-webkit-transform: rotate(12deg);
+	}
+	
+
+
+   .tile{
+/* 			width: 30%; */
+/* 			height: 360px; */
+		margin-bottom: 25px;
+		max-height: 250px;
+/*	
+		margin-right: 1.0%;
+		margin-left: 1.0%;
+*/
+/* 			float: left; */
+		text-align: left;	
+		background: white;
+		position: relative;
+		-webkit-box-shadow: 0 8px 6px -6px #ccc;
+		-moz-box-shadow: 0 8px 6px -6px #ccc;
+		box-shadow: 0 8px 6px -6px #ccc;
+		overflow: hidden;
+		.inner{ 
+			border-left: 10px solid #5dace2;
+			padding: 35px 25px;
+		}
+		.button{
+			position: absolute;
+			left: 20px;
+			bottom: 25px;
+		}
+		&:after{
+			position: absolute;
+			bottom: 0;
+			left: 10px;
+			right: 0;
+			display: block;
+			content: '';
+			height: 75px;
+			background-image: linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
+			background-image: -o-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
+			background-image: -moz-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
+			background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
+			background-image: -ms-linear-gradient(bottom, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 90%);
+			
+			background-image: -webkit-gradient(
+				linear,
+				left bottom,
+				left top,
+				color-stop(0.25, rgba(255,255,255,1)),
+				color-stop(0.9, rgba(255,255,255,0))
+			);
+			
+		}
+		
+		 h4{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 1.25em;	
+			line-height: 1.1em;
+			 a{
+				 color: #5dace2;
+				 text-decoration: none;
+			}
+		}
+	}
+
+
+	
+	#projects {
+	
+		.project {	
+			font-weight: lighter;
+			padding: 1em;
+		}
+		
+		.title{
+			font-size: 2em;
+			text-align: center;
+			font-weight: 100;
+			letter-spacing: .1em;
+			padding: 0.2em;
+			margin-top: 3%;	
+			display: block;
+			
+			a { 
+				color: #FFF; 
+				text-decoration: none;
+			}
+		}
+		
+		.aware-js,	  
+		.breakpoints{
+			color: #ffffff;
+		
+		}	
+		
+		.breakpoints{
+			background-image: url('../img/breakpoints_background.jpg');	
+		}
+		.tags-input {
+			-moz-box-shadow:    inset 0 30px 100px #ccc;
+			-webkit-box-shadow: inset 0 30px 100px #ccc;
+			box-shadow:         inset 0 30px 100px #ccc;
+		}
+		.aware-js{
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: url('../img/aware_background.jpg');	
+		}
+	
+	}
