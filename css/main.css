@@ -385,124 +385,134 @@ img {
   .aware-status a {
     color: white; }
 
-.plugin-page a {
-  color: #FFF; }
-.plugin-page .section .inner {
-  padding-left: 3.75%;
-  padding-right: 3.75%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  max-width: 960px; }
-.plugin-page.sections-purple .section {
-  background-color: #201D31; }
-.plugin-page.breakpoints-background {
-  background: #212121;
-  background-image: url("../img/breakpoints_big_bg.png");
-  background-repeat: no-repeat; }
-  .plugin-page.breakpoints-background .section {
-    background: none; }
-.plugin-page #nav {
-  background-color: #ffffff;
-  margin-top: 20px; }
-  .plugin-page #nav .inner {
-    padding-top: 25px;
-    padding-bottom: 25px; }
-.plugin-page .nav-links {
-  padding-top: 15px; }
-  .plugin-page .nav-links a {
-    margin-top: 10px;
-    width: 15%;
-    padding-top: 10px;
-    padding-bottom: 6px; }
-    .plugin-page .nav-links a.button {
-      background: #FFF;
-      border-radius: 6px;
-      color: #2B7FB9;
-      -webkit-box-shadow: none;
-      text-shadow: none;
-      box-shadow: none;
-      font-weight: normal; }
-.plugin-page #demos .inner {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-.plugin-page #demos .demo {
-  display: inline-block;
-  width: 22%;
-  max-width: 12.5em;
-  margin: 1%;
-  padding-top: 13px;
-  padding-bottom: 10px;
-  padding-left: 1%;
-  padding-right: 1%;
-  background-repeat: no-repeat;
-  background-position-x: 97%;
-  background-position-y: 50%;
-  background-size: 2.0rem; }
-  .plugin-page #demos .demo a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.0em; }
-  .plugin-page #demos .demo.long {
-    padding-right: 3em;
-    width: 35%; }
-  .plugin-page #demos .demo.github {
-    background-image: url("../img/github_white.png"); }
-  .plugin-page #demos .demo.github.white-background {
-    background-image: url("../img/github.png"); }
-  .plugin-page #demos .demo.js-fiddle {
-    background-image: url("../img/jsfiddle.png"); }
-.plugin-page .short-preview {
-  float: left;
-  width: 30%;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-  margin-bottom: 10px;
-  position: relative; }
-  .plugin-page .short-preview img {
-    width: 100%; }
-  .plugin-page .short-preview a {
-    text-decoration: none;
-    font-weight: lighter; }
-.plugin-page .short-preview-title {
-  height: 40px;
-  background-color: #ffffff;
-  color: #000000;
-  padding: 5px;
-  padding-top: 10px; }
-.plugin-page #posts .content-right {
-  margin-right: 1.875%;
-  margin-top: 15px; }
-.plugin-page #dispatch {
-  color: #eceded;
-  background-image: url("../img/dispatch_background.jpg");
-  background-position: center center;
-  -moz-box-shadow: inset 0 30px 100px #000;
-  -webkit-box-shadow: inset 0 30px 100px #000;
-  box-shadow: inset 0 30px 100px #000;
-  text-align: left; }
-  .plugin-page #dispatch .description {
-    line-height: 1.6em;
+.plugin-page {
+  /*
+  .section{
+  	
+  	.inner{
+  		padding: {
+  			left: 3.75%;
+  			right: 3.75%;
+  			top: 25px;
+  			bottom: 25px;
+  		}
+  		margin:{
+  			left: auto;
+  			right: auto;
+  		}
+  		width: 70%;
+  		max-width: 960px;	
+  	}
+  }	
+  */ }
+  .plugin-page a {
+    color: #FFF; }
+  .plugin-page.sections-purple .section {
+    background-color: #201D31; }
+  .plugin-page.breakpoints-background {
+    background: #212121;
+    background-image: url("../img/breakpoints_big_bg.png");
+    background-repeat: no-repeat; }
+    .plugin-page.breakpoints-background .section {
+      background: none; }
+  .plugin-page #nav {
+    background-color: #ffffff;
+    margin-top: 20px; }
+    .plugin-page #nav .inner {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+  .plugin-page .nav-links {
+    padding-top: 15px; }
+    .plugin-page .nav-links a {
+      margin-top: 10px;
+      width: 15%;
+      padding-top: 10px;
+      padding-bottom: 6px; }
+      .plugin-page .nav-links a.button {
+        background: #FFF;
+        border-radius: 6px;
+        color: #2B7FB9;
+        -webkit-box-shadow: none;
+        text-shadow: none;
+        box-shadow: none;
+        font-weight: normal; }
+  .plugin-page #demos .inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .plugin-page #demos .demo {
+    float: left;
+    width: 22%;
+    max-width: 12.5em;
+    margin: 1%;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    background-size: 2.0em; }
+    .plugin-page #demos .demo a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.0em; }
+    .plugin-page #demos .demo.long {
+      padding-right: 3em;
+      width: 35%; }
+    .plugin-page #demos .demo.github {
+      background-image: url("../img/github_white.png"); }
+    .plugin-page #demos .demo.github.white-background {
+      background-image: url("../img/github.png"); }
+    .plugin-page #demos .demo.js-fiddle {
+      background-image: url("../img/jsfiddle.png"); }
+  .plugin-page .short-preview {
+    float: left;
+    width: 30%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin-bottom: 10px;
+    position: relative; }
+    .plugin-page .short-preview img {
+      width: 100%; }
+    .plugin-page .short-preview a {
+      text-decoration: none;
+      font-weight: lighter; }
+  .plugin-page .short-preview-title {
+    height: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+    padding-top: 10px; }
+  .plugin-page #posts .content-right {
+    margin-right: 1.875%;
+    margin-top: 15px; }
+  .plugin-page #dispatch {
+    color: #eceded;
+    background-image: url("../img/dispatch_background.jpg");
+    background-position: center center;
+    -moz-box-shadow: inset 0 30px 100px #000;
+    -webkit-box-shadow: inset 0 30px 100px #000;
+    box-shadow: inset 0 30px 100px #000;
     text-align: left; }
-  .plugin-page #dispatch .dispatch-signup form {
-    padding-left: 15%;
-    width: 75%; }
-  .plugin-page #dispatch .dispatch-signup .button {
-    float: left; }
-  .plugin-page #dispatch .dispatch-signup label {
-    display: block;
-    text-align: left; }
-  .plugin-page #dispatch .dispatch-signup input[type="text"],
-  .plugin-page #dispatch .dispatch-signup input[type="email"] {
-    height: 30px;
-    width: 90%;
-    display: block; }
-  .plugin-page #dispatch .dispatch-info {
-    padding-top: 1em; }
+    .plugin-page #dispatch .description {
+      line-height: 1.6em;
+      text-align: left; }
+    .plugin-page #dispatch .dispatch-signup form {
+      padding-left: 15%;
+      width: 75%; }
+    .plugin-page #dispatch .dispatch-signup .button {
+      float: left; }
+    .plugin-page #dispatch .dispatch-signup label {
+      display: block;
+      text-align: left; }
+    .plugin-page #dispatch .dispatch-signup input[type="text"],
+    .plugin-page #dispatch .dispatch-signup input[type="email"] {
+      height: 30px;
+      width: 90%;
+      display: block; }
+    .plugin-page #dispatch .dispatch-info {
+      padding-top: 1em; }
 
 /** **/
 .button {
@@ -884,6 +894,12 @@ h3.prelude {
       width: 46%; }
     #home_page #projects .title {
       font-size: 1.5em; } }
+@media all and (max-width: 815px) {
+  .plugin-page #demos .demo {
+    max-width: none;
+    width: 46%; }
+    .plugin-page #demos .demo.long {
+      width: 70%; } }
 @media all and (max-width: 699px) {
   .half {
     width: 100%; }
@@ -893,7 +909,8 @@ h3.prelude {
 
   .section .inner {
     padding-top: 25px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    width: auto; }
     .section .inner .description {
       width: auto; }
   .section.fullbleed .inner .description {
@@ -1004,6 +1021,11 @@ h3.prelude {
 @media all and (max-width: 460px) {
   .plugin-page .fork_me {
     display: none; }
+  .plugin-page #demos .demo {
+    max-width: none;
+    width: 46%; }
+    .plugin-page #demos .demo.long {
+      width: 70%; }
 
   #home_page #packagr h1 {
     font-size: 1.5em; }

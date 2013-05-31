@@ -496,6 +496,7 @@ img{
 
 .plugin-page{
 	a { color: #FFF; }
+	/*
 	.section{
 		
 		.inner{
@@ -513,6 +514,7 @@ img{
 			max-width: 960px;	
 		}
 	}	
+	*/
 	&.sections-purple{
 		 .section{
 			background-color: #201D31;
@@ -557,15 +559,13 @@ img{
 	
 	#demos{
 		.inner{
-			
-			width: 85%;
+	
 			margin-left: auto;
 			margin-right: auto;
-			text-align: center;
-			
+			text-align: center;		
 		}
 		.demo{
-			display: inline-block;
+			float: left;
 			width: 22%;
 			max-width: 12.5em;
 			margin: 1%;
@@ -577,7 +577,7 @@ img{
 			background-repeat: no-repeat;
 			background-position-x: 97%;
 			background-position-y: 50%;
-			background-size: 2.0rem;
+			background-size: 2.0em;
 			
 			a{
 				text-decoration: none;
@@ -1237,6 +1237,19 @@ h3.prelude{
 		*/
 	}	
 }
+@media all and (max-width: 815px) {
+	.plugin-page{
+		#demos{
+		 .demo{
+		  	max-width: none;
+		  	width: 46%;
+		  	&.long{
+			  	width: 70%;
+		  	}
+		 }
+	  }
+	}	
+}
 @media all and (max-width: 699px) {
 	.half{
 		width: 100%;
@@ -1250,7 +1263,7 @@ h3.prelude{
 	   .inner{
 			padding-top: 25px;
 			padding-bottom: 25px;	
-			
+			width: auto;
 			.description{
 				width: auto;
 			}
@@ -1273,7 +1286,7 @@ h3.prelude{
 		padding-right: 10px;
 		font-size: 0.75em;
 	}
-	
+
 	#home_page{
 		#promo{
 			p{
@@ -1410,6 +1423,15 @@ h3.prelude{
 	.plugin-page{
 		.fork_me{
 			display: none;
+		}
+		#demos{
+		 .demo{
+		  	max-width: none;
+		  	width: 46%;
+		  	&.long{
+			  	width: 70%;
+		  	}
+		 }
 		}
 	}
 	#home_page{
