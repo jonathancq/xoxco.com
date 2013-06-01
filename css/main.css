@@ -431,32 +431,6 @@ div.video {
 .plugin-page #posts .content-right {
   margin-right: 1.875%;
   margin-top: 15px; }
-.plugin-page #dispatch {
-  color: #eceded;
-  background-image: url("../img/dispatch_background.jpg");
-  background-position: center center;
-  -moz-box-shadow: inset 0 30px 100px black;
-  -webkit-box-shadow: inset 0 30px 100px black;
-  box-shadow: inset 0 30px 100px black;
-  text-align: left; }
-  .plugin-page #dispatch .description {
-    line-height: 1.6em;
-    text-align: left; }
-  .plugin-page #dispatch .dispatch-signup form {
-    padding-left: 15%;
-    width: 75%; }
-  .plugin-page #dispatch .dispatch-signup .button {
-    float: left; }
-  .plugin-page #dispatch .dispatch-signup label {
-    display: block;
-    text-align: left; }
-  .plugin-page #dispatch .dispatch-signup input[type="text"],
-  .plugin-page #dispatch .dispatch-signup input[type="email"] {
-    height: 30px;
-    width: 90%;
-    display: block; }
-  .plugin-page #dispatch .dispatch-info {
-    padding-top: 1em; }
 
 /** **/
 .button {
@@ -775,7 +749,12 @@ h3.prelude {
   .half {
     width: auto;
     float: none;
-    clear: both; } }
+    clear: both; }
+
+  #dispatch .dispatch-signup form {
+    padding-left: 0;
+    margin: 0px auto;
+    width: 100%; } }
 /* Smaller than an ipad */
 @media all and (max-width: 1024px) {
   body {
@@ -788,6 +767,11 @@ h3.prelude {
 
   #dispatch p.description {
     text-align: center; }
+
+  .plugin-page #dispatch p.description {
+    text-align: left; }
+  .plugin-page #dispatch .dispatch-info {
+    margin-top: 1.25em; }
 
   .dispatch-signup {
     max-width: 500px; }

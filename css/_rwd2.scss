@@ -33,7 +33,6 @@
 	}
 
 
-
 	.fork_me {
 		display: none;
 	}
@@ -55,6 +54,13 @@
 	}
 
 
+	#dispatch .dispatch-signup{
+		form{
+			padding-left: 0;
+			margin: 0px auto;
+			width: 100%;
+		}
+	}
 
 }
 
@@ -77,6 +83,16 @@
 
 	#dispatch p.description {
 		text-align: center;
+	}
+	
+	.plugin-page #dispatch {
+		p.description {
+			text-align: left;
+			}
+			
+		.dispatch-info {
+			margin-top: 1.25em;
+		}		
 	}
 
 	.dispatch-signup {
