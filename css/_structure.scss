@@ -203,30 +203,26 @@ div.video {
 			margin-right: auto;
 			text-align: center;		
 		}
-		.demo{
-			float: left;
-			width: 22%;
+		a.demo{
+			display: inline-block;
 			max-width: 12.5em;
 			margin: 1%;
 			padding-top: 13px;
 			padding-bottom: 10px;
-			padding-left: 1%;
-			padding-right: 1%;
+			padding-left: 2%;
+			padding-right: 2%;
 			
 			background-repeat: no-repeat;
 			background-position-x: 97%;
 			background-position-y: 50%;
 			background-size: 2.0em;
 			
-			a{
-				text-decoration: none;
-				color: white;
-				font-size: 1.0em;
-			}
+			text-decoration: none;
+			color: white;
+			font-size: 1.0em;
 
 			&.long{
 				padding-right: 3em;
-				width: 35%;	
 			}
 			&.github{
 				background-image: url('../img/github_white.png');

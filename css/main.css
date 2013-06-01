@@ -383,31 +383,28 @@ div.video {
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
-.plugin-page #demos .demo {
-  float: left;
-  width: 22%;
+.plugin-page #demos a.demo {
+  display: inline-block;
   max-width: 12.5em;
   margin: 1%;
   padding-top: 13px;
   padding-bottom: 10px;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   background-repeat: no-repeat;
   background-position-x: 97%;
   background-position-y: 50%;
-  background-size: 2.0em; }
-  .plugin-page #demos .demo a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.0em; }
-  .plugin-page #demos .demo.long {
-    padding-right: 3em;
-    width: 35%; }
-  .plugin-page #demos .demo.github {
+  background-size: 2.0em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.0em; }
+  .plugin-page #demos a.demo.long {
+    padding-right: 3em; }
+  .plugin-page #demos a.demo.github {
     background-image: url("../img/github_white.png"); }
-  .plugin-page #demos .demo.github.white-background {
+  .plugin-page #demos a.demo.github.white-background {
     background-image: url("../img/github.png"); }
-  .plugin-page #demos .demo.js-fiddle {
+  .plugin-page #demos a.demo.js-fiddle {
     background-image: url("../img/jsfiddle.png"); }
 .plugin-page .short-preview {
   float: left;
