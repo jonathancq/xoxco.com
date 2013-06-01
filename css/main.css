@@ -337,7 +337,7 @@ div.video {
     color: white; }
 
 #plugin-description h1 {
-  font-size: 2em;
+  font-size: 3em;
   margin: 0px;
   padding: 0px;
   text-align: center; }
@@ -355,11 +355,12 @@ div.video {
   color: #FFF; }
 .plugin-page.sections-purple .section {
   background-color: #201D31; }
-.plugin-page.breakpoints-background {
+.plugin-page.breakpoints-background .container {
+  position: relative;
   background: #212121;
   background-image: url("../img/breakpoints_big_bg.png");
   background-repeat: no-repeat; }
-  .plugin-page.breakpoints-background .section {
+  .plugin-page.breakpoints-background .container .section {
     background: none; }
 .plugin-page #nav {
   background: #ffffff;
@@ -536,6 +537,27 @@ h3.prelude {
 
 .fork_me {
   z-index: 1000; }
+
+ul#animated_logo {
+  display: block;
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 0;
+  position: relative;
+  width: 396px;
+  height: 77px;
+  max-width: 90%; }
+
+ul#animated_logo li {
+  position: relative;
+  display: block;
+  max-width: 19%;
+  width: 77px;
+  height: 77px;
+  margin-right: 2px;
+  top: -80px;
+  float: left;
+  -webkit-transition: all 0.5s ease; }
 
 .blackgradient {
   background-image: url(../img/buttonbg.png);
