@@ -31,7 +31,6 @@
 	        		<img src="/2013/img/xoxcologo_cropped.png" height="50" width="302" class="logo"/>
 	        	</a>
 	     	</div>
-		 	<a href="https://github.com/xoxco/tagsinput" class="fork_me"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
 	     	<div class="section">
     			<div class="nav-links">
 			    	<a href="http://xoxco.com/work.html" class="button">WORK</a>
@@ -41,6 +40,8 @@
 			    	<div class="clear"></div>
     			</div>
 	     	</div>	     	
+		 	<a href="https://github.com/xoxco/tagsinput" class="fork_me"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+
 	     	<div id="aware-container" class="section first-visit-only">
 		     	<div class="inner">
 			     	<div class="aware-status">
@@ -83,6 +84,24 @@
 				     	<div class="clear"></div>
 			     	</div>
 		     	</div>
+	     	</div>
+	     	
+	     	<div class="section examples">
+	     		<div class="inner">
+	     			
+	     			<h3>More Examples</h3>
+	     			
+	     			<p>
+			     		<input name="tags" id="tags2" value="JQUERY, TAGS, INPUT, PLUGIN" />
+	     			</p>
+	     			<p>
+			     		<input name="tags" id="tags3" value="JQUERY, TAGS, INPUT, PLUGIN" />
+	     			</p>
+	     			<p>
+			     		<input name="tags" id="tags4" value="JQUERY, TAGS, INPUT, PLUGIN" />
+	     			</p>
+	     		
+	     		</div>
 	     	</div>
 	     		     	
 	     	<div class="section centered">
@@ -155,6 +174,9 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/2013/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js'></script>
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/start/jquery-ui.css" />
+
         <script src="/2013/js/jQuery-Tags-Input/jquery.tagsinput.js"></script>
         <script src="/2013/js/awarejs/aware.js"></script>
         <script src="/2013/js/plugins.js"></script>
@@ -168,6 +190,24 @@
 		        	"width": "75%",
 		        	"height": "70px",
 		        	'defaultText':''
+	        	});	
+
+	        	$('#tags2').tagsInput({
+	        		'width': '90%',
+	        		'height':'70px',
+		        	'defaultText':'Add Tag'
+	        	});	
+	        	$('#tags3').tagsInput({
+	        		'width': '90%',
+	        		'height':'70px',
+		        	'defaultText':'Add Tag',
+					'autocomplete_url':'/js/jQuery-Tags-Input/test/fake_json_endpoint.html' // jquery ui autocomplete requires a json endpoint
+				});
+
+	        	$('#tags4').tagsInput({
+	        		'width': '90%',
+	        		'height':'70px',
+		        	'defaultText':'Add Tag'
 	        	});	
 	        	
 	        	$('#tags_tag').focus();
