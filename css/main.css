@@ -608,15 +608,17 @@ h3.prelude {
     #dispatch .dispatch-books img {
       display: block;
       float: right; }
-  #dispatch .dispatch-signup label {
-    display: block;
-    text-align: left; }
-  #dispatch .dispatch-signup input[type="text"],
-  #dispatch .dispatch-signup input[type="email"] {
-    width: 95%;
-    border: 0;
-    padding: 2.5%;
-    display: block; }
+  #dispatch .dispatch-signup {
+    max-width: 500px; }
+    #dispatch .dispatch-signup label {
+      display: block;
+      text-align: left; }
+    #dispatch .dispatch-signup input[type="text"],
+    #dispatch .dispatch-signup input[type="email"] {
+      width: 95%;
+      border: 0;
+      padding: 2.5%;
+      display: block; }
 
 #recent-posts {
   color: #666;
@@ -748,14 +750,21 @@ h3.prelude {
     float: none;
     clear: both; }
 
-  #dispatch .dispatch-signup form {
-    padding-left: 0;
-    margin: 0px auto;
-    width: 100%; } }
+  #dispatch .dispatch-signup {
+    margin: 0px auto; }
+    #dispatch .dispatch-signup form {
+      padding-left: 0;
+      margin: 0px auto;
+      width: 100%; } }
 /* Smaller than an ipad */
 @media all and (max-width: 1024px) {
   body {
     font-size: 16px; } }
+@media all and (min-width: 600px) {
+  .tile {
+    width: 45%;
+    margin: 2.5%;
+    float: left; } }
 /* Bigger than a tablet */
 @media all and (min-width: 769px) {
   .dispatch-signup {
@@ -769,14 +778,6 @@ h3.prelude {
     text-align: left; }
   .plugin-page #dispatch .dispatch-info {
     margin-top: 1.25em; }
-
-  .dispatch-signup {
-    max-width: 500px; }
-
-  .tile {
-    width: 45%;
-    margin: 2.5%;
-    float: left; }
 
   #projects .half {
     width: 40%;

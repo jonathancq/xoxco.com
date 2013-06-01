@@ -55,6 +55,8 @@
 
 
 	#dispatch .dispatch-signup{
+			margin: 0px auto;		
+
 		form{
 			padding-left: 0;
 			margin: 0px auto;
@@ -69,6 +71,15 @@
 	
 	body {
 		font-size: 16px;
+	}
+	
+}
+
+@media all and (min-width: 600px) {
+	.tile {
+		width: 45%;
+		margin: 2.5%;
+		float: left;
 	}
 	
 }
@@ -95,16 +106,7 @@
 		}		
 	}
 
-	.dispatch-signup {
-		max-width: 500px; 
-	}
-	
-	.tile {
-		width: 45%;
-		margin: 2.5%;
-		float: left;
-	}
-	
+
 	#projects .half {
 		width: 40%;
 		padding: 5%;
