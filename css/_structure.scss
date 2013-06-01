@@ -62,7 +62,8 @@ div.video {
 	&.centered {
 		text-align: center; 
 	}	
-	
+
+	position: relative;	
 	background-color: #eeefef;
 
    .description{
@@ -72,6 +73,7 @@ div.video {
    }
    .inner{
    		
+   		position: relative;
 		padding-left: 1em;
 		padding-right: 1em;
 		padding-top: 1.25em;
