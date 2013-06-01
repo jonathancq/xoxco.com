@@ -27,6 +27,32 @@ http.get('http://xoxapi.herokuapp.com/featured_posts/6/400',function(res) {
 });
 
 
+
+http.get('http://xoxapi.herokuapp.com/posts_by_tag/reader+aware+design/3/400',function(res) {
+
+	var json = '';
+
+	res.on('data',function(chunk) {
+	//	console.log('Got a chunk');
+		json = json + chunk;
+	});
+	res.on('end',function() {
+		
+		json = JSON.parse(json);
+		
+		for (var x in json) {
+			json[x].pubDate = new Date(json[x].pubDate).format('yyyy-mm-dd HH:MM:ss');
+			
+		}
+				
+		var template = hbs.compile(fs.readFileSync('aware_layout.hbs','utf-8'));
+		fs.writeFileSync('projects/code/aware/index.html',template({featured_posts: json}));
+		
+	});
+});
+
+
+
 /*
  * Date Format 1.2.3
  * (c) 2007-2009 Steven Levithan <stevenlevithan.com>

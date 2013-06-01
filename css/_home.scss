@@ -6,8 +6,8 @@
 		background-repeat: no-repeat;
 		background-color: #000;
 		background-image: url('../img/grid_background.jpg');
-		background-size: 100%;
-		
+		background-size: 100% auto;
+		background-position: top center;
 		p{
 			color: white;
 			font-weight: lighter;
@@ -101,15 +101,9 @@
 
 
    .tile{
-/* 			width: 30%; */
-/* 			height: 360px; */
+		color: #666;
 		margin-bottom: 25px;
 		max-height: 250px;
-/*	
-		margin-right: 1.0%;
-		margin-left: 1.0%;
-*/
-/* 			float: left; */
 		text-align: left;	
 		background: white;
 		position: relative;
@@ -159,6 +153,18 @@
 				 color: #5dace2;
 				 text-decoration: none;
 			}
+		}
+
+		.byline {
+			color: #999;
+			font-size: 0.9em;
+		}
+		.author {
+			font-style: italic;
+		}
+		
+		p {
+			font-size: 0.9em;
 		}
 	}
 

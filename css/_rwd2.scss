@@ -2,21 +2,24 @@
 @media all and (max-width: 480px) {
 	
 
-	#home_page {	
-		#promo p {
-			font-size: 1.5em;
-		}
-		
-		#packagr h1 {
-			font-size: 1.5em;
-		}
+	#promo p {
+		font-size: 1.5em;
+	}
+	
+	#packagr h1 {
+		font-size: 1.5em;
+	}
+
+	#projects .title { 
+		font-size: 1.5em;
 	}
 
 	#nav .nav-links .button{
 		padding-left: 10px;
 		padding-right: 10px;
-		font-size: 0.75em;
+		font-size: 0.7em;
 	}	
+
 
 
 	.fork_me {
@@ -99,6 +102,7 @@
 		width: 30%;
 		margin: 1.5%;
 		max-height: 360px;
+		min-height: 360px;
 	}
 }
 

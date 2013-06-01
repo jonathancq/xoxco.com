@@ -11,6 +11,29 @@ img{
 	max-width: 100%;
 }
 
+object, embed, iframe {
+	max-width: 100%;
+}
+
+div.video {
+
+	margin: 0px auto;	
+	width: 100%;
+	position: relative;
+	padding: 0;
+	padding-top: 56.25%;
+	
+	
+	object,embed, iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+}
+
 #main{
 	max-width: 1800px;
 	margin-left: auto;
@@ -109,7 +132,7 @@ img{
 #plugin-description{
 
 	h1{
-		font-size: 2.5em;
+		font-size: 2em;
 		margin: 0px;
 		padding: 0px;  
 		text-align: center;		
@@ -154,7 +177,7 @@ img{
 	}
 	.nav-links{
 		text-align: center;
-		padding: 0px 1em;
+		padding: 0px;
 		
 		a{
 			margin-top: 10px;
@@ -399,7 +422,6 @@ h3.prelude{
 /** **/
 
 .social{
-	width: 340px;
 	margin-left: auto;
 	margin-right: auto;	
 	a{
