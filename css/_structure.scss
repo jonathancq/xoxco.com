@@ -11,18 +11,13 @@ img{
 	max-width: 100%;
 }
 
-object, embed, iframe {
-	max-width: 100%;
-}
-
 div.video {
 
 	margin: 0px auto;	
 	width: 100%;
 	position: relative;
 	padding: 0;
-	padding-top: 56.25%;
-	
+	padding-top: 56.25%;	
 	
 	object,embed, iframe {
 		position: absolute;
