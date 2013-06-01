@@ -757,7 +757,7 @@ h3.prelude {
   body {
     font-size: 16px; } }
 /* Bigger than a tablet */
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
   .dispatch-signup {
     width: 45%;
     margin-left: 5%; }
