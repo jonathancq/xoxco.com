@@ -1,0 +1,184 @@
+	$spot_color: #6666b7;
+	$spot_color_foreground: #FFF;
+	$secondary_color: #CCC;
+	$pullquote_color: #666;
+
+/* Blog Stuff */
+
+	#blog {
+		position: relative;
+	}
+
+	header#blog_header {
+			width: 90%;
+			max-width: 600px;
+			margin: 0px auto;
+			padding-top: 50px;
+			padding-bottom: 20px;
+			margin-bottom:20px;
+			border-bottom: 1px dashed $secondary_color;
+
+			p { 
+				margin-top: 0;
+			}	
+
+			img { 
+				width: 25%;
+				margin-right: 2.5%;
+				max-width: 100px;
+				float: left;
+			}
+
+	}
+
+	ol#posts {
+
+		clear:both;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		.text {
+
+			blockquote {
+
+				border-left: 5px solid $secondary_color;
+				margin-left: 0;
+				padding-left: 1em;
+			}
+
+		}
+
+		.older {
+			float: right;
+		}
+
+		.post {
+			width: 90%;
+			max-width: 600px;
+			margin: 0px auto 50px;
+			border-bottom: 1px dashed $secondary_color;
+
+			p.meta {
+				font-size: 0.8em;
+			}
+
+			&.video,
+			&.photoset {
+
+				max-width: 700px;
+
+
+				embed,object,video,iframe {
+					margin: 0px auto;
+					display: block;
+					max-width: 100%;
+				}
+
+			}
+
+			&.photo {
+
+				max-width: none;
+
+				img {
+					display: block;
+					margin: 0px auto;
+				}
+
+			}
+
+			&.quote {
+				max-width: 1000px;
+
+				blockquote {
+					font-size: 1.2em;
+					line-height: 150%;
+					color: $pullquote_color;
+
+				}
+			}
+
+			&.navigation {
+				border-bottom: 0;
+			}
+
+			.text {
+				width: 90%;
+				max-width: 600px;
+				margin: 0px auto;		
+
+			}
+
+		}	
+
+	}
+
+	ul.tags { 
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-size: 0.8em;
+		li {
+			display: inline-block;
+			margin-bottom:10px;
+
+			a {
+				display: block;
+				padding: 5px;
+				background-color: $secondary_color;
+				color: $spot_color_foreground;
+			}
+
+			a:hover {
+				background-color: $spot_color;
+			}
+		}
+	}
+
+      ul#likes {
+            	list-style-type: none;
+            	margin: 0 0 0 0;
+            	padding: 0 0 0 0;
+            }
+
+                li.like_post {
+                    /* Should match the width specified in the Likes tag */
+                    width: 200px;
+                    padding: 0px;
+                    float: left;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                  li.like_post img {
+                      max-width: 100%;
+                  }
+
+                  li.like_post blockquote {
+                      margin: 0;
+                      padding: 0 0 0 10px;
+                      border-left: 1px solid #eee;
+                  }
+
+                  li.like_post ol,
+                  li.like_post ul {
+                      margin: 0 0 0 15px;
+                      padding: 0;
+                  }
+
+                  li.like_post .like_link a {
+                      font-weight: bold;
+                  }
+
+                  li.like_post .like_title {
+                      font-weight: bold;
+                  }
+                  
+                  li.like_post .like_caption { display: none; }
+
+                  li.like_post .post_info_bottom {
+                      margin: 10px 0 0 0;
+                      display: block !important;
+                  }
+
+

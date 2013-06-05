@@ -1,9 +1,30 @@
 /*
-Errno::ENOENT: No such file or directory - main
+Syntax error: Invalid property: "Backtrace:" (no value).
+        on line 4 of main
+
+1: /*
+2: Errno::ENOENT: No such file or directory - main
+3: 
+4: Backtrace:
+5: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `read'
+6: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `update_stylesheet'
+7: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
+8: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
+9: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
 
 Backtrace:
-/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `read'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `update_stylesheet'
+main:4
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:614:in `parse_property'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:597:in `parse_property_or_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:578:in `parse_line'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:471:in `build_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:490:in `append_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:489:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:489:in `append_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:345:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:341:in `update_stylesheet'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
@@ -21,4 +42,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - main"; }
+  content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of main\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - main\A 3: \A 4: Backtrace:\A 5: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `read'\A 6: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `update_stylesheet'\A 7: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'\A 8: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'\A 9: /Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'"; }

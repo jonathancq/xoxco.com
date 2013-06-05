@@ -739,6 +739,122 @@ ul#animated_logo li {
   background-position: center center;
   background-image: url("../img/aware_background.jpg"); }
 
+/* Blog Stuff */
+#blog {
+  position: relative; }
+
+header#blog_header {
+  width: 90%;
+  max-width: 600px;
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #cccccc; }
+  header#blog_header p {
+    margin-top: 0; }
+  header#blog_header img {
+    width: 25%;
+    margin-right: 2.5%;
+    max-width: 100px;
+    float: left; }
+
+ol#posts {
+  clear: both;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ol#posts .text blockquote {
+    border-left: 5px solid #cccccc;
+    margin-left: 0;
+    padding-left: 1em; }
+  ol#posts .older {
+    float: right; }
+  ol#posts .post {
+    width: 90%;
+    max-width: 600px;
+    margin: 0px auto 50px;
+    border-bottom: 1px dashed #cccccc; }
+    ol#posts .post p.meta {
+      font-size: 0.8em; }
+    ol#posts .post.video, ol#posts .post.photoset {
+      max-width: 700px; }
+      ol#posts .post.video embed, ol#posts .post.video object, ol#posts .post.video video, ol#posts .post.video iframe, ol#posts .post.photoset embed, ol#posts .post.photoset object, ol#posts .post.photoset video, ol#posts .post.photoset iframe {
+        margin: 0px auto;
+        display: block;
+        max-width: 100%; }
+    ol#posts .post.photo {
+      max-width: none; }
+      ol#posts .post.photo img {
+        display: block;
+        margin: 0px auto; }
+    ol#posts .post.quote {
+      max-width: 1000px; }
+      ol#posts .post.quote blockquote {
+        font-size: 1.2em;
+        line-height: 150%;
+        color: #666666; }
+    ol#posts .post.navigation {
+      border-bottom: 0; }
+    ol#posts .post .text {
+      width: 90%;
+      max-width: 600px;
+      margin: 0px auto; }
+
+ul.tags {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em; }
+  ul.tags li {
+    display: inline-block;
+    margin-bottom: 10px; }
+    ul.tags li a {
+      display: block;
+      padding: 5px;
+      background-color: #cccccc;
+      color: white; }
+    ul.tags li a:hover {
+      background-color: #6666b7; }
+
+ul#likes {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+
+li.like_post {
+  /* Should match the width specified in the Likes tag */
+  width: 200px;
+  padding: 0px;
+  float: left;
+  border-bottom: 1px solid #cccccc; }
+
+li.like_post img {
+  max-width: 100%; }
+
+li.like_post blockquote {
+  margin: 0;
+  padding: 0 0 0 10px;
+  border-left: 1px solid #eeeeee; }
+
+li.like_post ol,
+li.like_post ul {
+  margin: 0 0 0 15px;
+  padding: 0; }
+
+li.like_post .like_link a {
+  font-weight: bold; }
+
+li.like_post .like_title {
+  font-weight: bold; }
+
+li.like_post .like_caption {
+  display: none; }
+
+li.like_post .post_info_bottom {
+  margin: 10px 0 0 0;
+  display: block !important; }
+
 /* Smartphone-ish */
 @media all and (max-width: 480px) {
   #promo p {
