@@ -283,6 +283,9 @@ div.video {
       padding-top: 10px;
       padding-bottom: 6px; }
 
+.blog #nav .nav-links {
+  margin-top: 25px; }
+
 .section {
   position: relative;
   background-color: #eeefef; }
