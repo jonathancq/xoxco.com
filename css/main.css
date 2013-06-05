@@ -454,6 +454,8 @@ div.video {
   text-shadow: 1px 1px 1px #2b7fb9; }
   .button:hover {
     background-color: #72c2f9; }
+  .button:visited {
+    color: #FFF; }
 
 .arrow-right {
   font-weight: lighter;
