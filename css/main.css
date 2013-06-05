@@ -743,6 +743,28 @@ ul#animated_logo li {
 #blog {
   position: relative; }
 
+#pagination .newer, #pagination .older {
+  display: block;
+  background: #CCC;
+  padding: 20px;
+  font-size: 30px;
+  position: fixed;
+  top: 45%; }
+
+#pagination .newer {
+  left: 0; }
+
+#pagination .older {
+  right: 0; }
+
+#pagination .newer span,
+#pagination .older span {
+  display: none; }
+
+#pagination .newer:hover,
+#pagination .older:hover {
+  color: #FFF; }
+
 header#blog_header {
   width: 90%;
   max-width: 600px;
@@ -855,6 +877,11 @@ li.like_post .post_info_bottom {
   margin: 10px 0 0 0;
   display: block !important; }
 
+@media all and (max-width: 840px) {
+  #pagination .newer,
+  #pagination .older {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 50px 10px; } }
 /* Smartphone-ish */
 @media all and (max-width: 480px) {
   #promo p {
