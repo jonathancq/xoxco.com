@@ -6,6 +6,15 @@ body,html {
 	font-family: "Avenir", "Helvetica", "Sans Serif";
 }
 
+a { 
+	color: #5dace2;
+}
+
+
+a:visited { 
+	color: darken(#5dace2,10%);
+}
+
 img{
 	display: inline-block;
 	max-width: 100%;
