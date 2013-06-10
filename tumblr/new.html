@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>{Title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+
+        <link rel="stylesheet" href="http://xoxco.com/2013/css/normalize.css">
+        <link rel="stylesheet" href="http://xoxco.com/2013/css/main.css">
+        <link rel="stylesheet" href="http://xoxco.com/2013/js/jQuery-Tags-Input/jquery.tagsinput.css" type="text/css" media="screen" charset="utf-8">
+        <script src="http://xoxco.com/2013/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://xoxco.com/2013/js/awarejs/aware.js"></script>
+        <script src="http://xoxco.com/2013/js/main.js"></script>
+
+
+    </head>
+    <body class="blog">
+
+    	<div id="nav" class="section">
+	    	<div class="inner">
+	    		<div class="half">
+					<ul id="animated_logo">
+						<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/x1.png" alt="x" border="0"></a></li>
+						<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/o1.png" alt="o" border="0"></a></li>
+						<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/x2.png" alt="x" border="0"></a></li>
+						<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/c.png" alt="c" border="0"></a></li>
+						<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/o2.png" alt="o" border="0"></a></li>
+					</ul>
+	    		</div>
+	    		<div class="half">
+	    			<div class="nav-links">
+				    	<a href="http://xoxco.com/work.html" class="button">WORK</a>
+				    	<a href="http://xoxco.com/projects" class="button">PROJECTS</a>
+				    	<a href="http://notes.xoxco.com/" class="button">BLOG</a>
+				    	<a href="http://xoxco.com/contact" class="button">ABOUT</a>
+				    	<div class="clear"></div>
+	    			</div>
+	    		</div>
+	    		<div class="clear"></div>
+	    	</div>
+    	</div>
+    
+		<div id="blog">
+
+
+
+			<header id="blog_header">
+                <h1 style="margin-bottom:5px;">Notes</h1>
+                <p>{description}</p>
+			</header>
+
+
+
+			<ol id="posts">
+				{block:TagPage}
+				<li class="post">
+		            <h1>Posts tagged <strong>{Tag}</strong></h1>
+				</li>
+		        {/block:TagPage}
+				{block:PermalinkPage} 
+					{block:PermalinkPagination}
+					<li class="post" id="pagination">
+						<p>
+							This is an individual post from <a href="/">XOXCO's blog</a>.  Use the links below to navigate through the archives.
+						</p>
+						
+						{block:PreviousPost}<a class="newer" href="{PreviousPost}#jump">&laquo;</a>{/block:PreviousPost} 
+						{block:NextPost}<a class="older" href="{NextPost}#jump">&raquo;</a>{/block:NextPost}
+
+						{block:PreviousPost}<a class="next" href="{PreviousPost}">&laquo;<span> Previous</span></a>{/block:PreviousPost} 
+						{block:NextPost}<a class="previous" href="{NextPost}"><span>Next </span>&raquo;</a>{/block:NextPost}
+
+						<div class="clear"></div>
+					</li>
+					{/block:PermalinkPagination}
+				{/block:PermalinkPage} 
+
+					<li id="jump"></li>
+				{block:Posts}
+					{block:Text}
+						<li class="post text">
+							{block:Title}
+								<h2><a href="{Permalink}" class="title">{Title}</a></h2>
+							{/block:Title}
+	
+							{Body}
+
+
+							<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>
+							
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+							{/block:HasTags}
+
+						</li>
+					{/block:Text}
+	
+					{block:Photo}
+						<li class="post photo">
+							{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}
+	
+							<div class="text">
+							{block:Caption}
+								<div class="caption">{Caption}</div>
+							{/block:Caption}
+
+							<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+
+							{/block:HasTags}
+							</div>
+
+						</li>
+					{/block:Photo}
+					
+					{block:Photoset}
+						<li class="post photoset">
+							{Photoset-700}
+	
+							<div class="text">
+							{block:Caption}
+								<div class="caption">{Caption}</div>
+							{/block:Caption}
+
+							<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+
+							{/block:HasTags}
+							</div>
+
+
+						</li>
+					{/block:Photoset}
+	
+					{block:Quote}
+						<li class="post quote">
+							<blockquote>
+								{Quote}
+							</blockquote>
+	
+							<div class="text">
+							{block:Source}
+								<div class="source">{Source}</div>
+							{/block:Source}
+
+							<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+
+							{/block:HasTags}
+							</div>
+						</li>
+					{/block:Quote}
+	
+					{block:Link}
+						<li class="post link">
+							<div class="link">
+							
+							<h2><a href="{URL}" class="link" {Target}>{Name}</a></h2>
+							</div>
+							{block:Description}
+								<div class="description">{Description}</div>
+							{/block:Description}
+							
+								<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>
+
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+								
+							{/block:HasTags}
+
+
+						</li>
+					{/block:Link}
+	
+					{block:Chat}
+						<li class="post chat">
+							{block:Title}
+								<h2><a href="{Permalink}">{Title}</a></h2>
+							{/block:Title}
+	
+							<ul class="chat">
+								{block:Lines}
+									<li class="{Alt} user_{UserNumber}">
+										{block:Label}
+											<span class="label">{Label}</span>
+										{/block:Label}
+	
+										{Line}
+									</li>
+								{/block:Lines}
+							</ul>
+							
+							<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>
+							
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+
+							{/block:HasTags}
+
+
+						</li>
+					{/block:Chat}
+	
+					{block:Video}
+						<li class="post video">
+							{VideoEmbed-700}
+	
+							<div class="text">
+							{block:Caption}
+								<div class="caption">{Caption}</div>
+							{/block:Caption}
+
+							<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>
+
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+
+							{/block:HasTags}
+							</div>
+						</li>
+					{/block:Video}
+	
+					{block:Audio}
+						<li class="post audio">
+							{AudioPlayerBlack}
+	
+							{block:Caption}
+								<div class="caption">{Caption}</div>
+							{/block:Caption}
+							
+							<p class="meta">
+							posted {block:Date}{TimeAgo} on {ShortMonth} {DayOfMonth}, {Year} {/block:Date}
+							| <a href="{Permalink}">Permalink</a>
+							{block:NoteCount}
+							| <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}
+							</p>							
+
+							{block:HasTags}
+								<ul class="tags">
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+								<div class="clear"></div>
+
+							{/block:HasTags}
+
+						</li>
+					{/block:Audio}
+				{/block:Posts}
+				<li class="post navigation">
+				
+					{block:PostNotes}
+						<a name="notes"></a>
+						<h3>Tumblr Notes</h3>
+						{PostNotes}
+					{/block:PostNotes}
+
+					{block:PreviousPage}
+						<a href="{PreviousPage}" class="newer">&#171; Previous</a>
+					{/block:PreviousPage}
+	
+					{block:NextPage}
+						<a href="{NextPage}" class="older">Next &#187;</a>
+					{/block:NextPage}
+					<div class="clear"></div>
+				</li>
+			</ol>
+		</div>
+	    	<div id="dispatch" class="section">
+		    	<div class="inner">
+		    		<div class="dispatch-info half">
+				    	<div class="dispatch-logo">
+					    	<a href="http://xoxco.com/dispatch"><img src="http://xoxco.com/2013/img/Dispatchheader.png" border="0" alt="Dispatch Logo" /></a>
+				    	</div>
+				    	<p class="description">Receive XOXCO's curated broadcast of original essays and links about product design, publishing, and software. Featuring exclusive links to experimental software and limited edition digital downloads.</p>
+		    		</div>
+			    	<div class="dispatch-signup half">
+				    	<form action="http://xoxco.us6.list-manage1.com/subscribe/post?u=babb63411318969580dc46309&amp;id=86c21bc4e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+							<p>
+								<label>
+									Email
+								</label>
+								<input type="email" value="" name="EMAIL" class="text" id="mce-EMAIL" required="true" placeholder="chester@xoxco.com">
+							</p>
+							<p>
+								<label>
+									First Name
+								</label>
+								<input type="text" value="" class="text" name="MERGE1" id="MERGE1" required="true" placeholder="Chester">
+							</p>
+							<p>
+								<label>
+									Last Name
+								</label>
+								<input type="text" value="" class="text" name="MERGE2" id="MERGE2" required="true" placeholder="Phillips">
+							</p>
+							<p>
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+							</p>
+			
+						</form>
+						
+			    	</div>
+			    	<div class="clear"></div>
+		    	</div>
+	    	</div> 
+
+	    	<div id="footer" class="section">
+		    	<div class="inner">
+			    	<div class="contact">
+				    	<div id="get-in-touch" class="social">
+					    	<a href="mailto:info@xoxco.com?Subject=Hello" class="email"></a>
+					    	<a href="https://twitter.com/xoxco" class="twitter"></a>
+					    	<a href="https://www.facebook.com/xoxco" class="facebook"></a>
+					    	<a href="https://github.com/xoxco" class="github"></a>
+				    	</div>
+				    	<div class="clear"></div>
+				    	<p>XOXCO is a design and development company based in Austin, TX</p>
+				    	<p>&copy; 2008-2013 XOXCO Inc</p>
+			    	</div>
+		    	</div>
+	    	</div>  
+		
+	
+	<script type="text/javascript">
+		
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-84020-31']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>		
+
+    </body>
+</html>

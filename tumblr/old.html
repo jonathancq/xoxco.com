@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+    <link rel="icon" href="{Favicon}"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="http://xoxco.com/new/css/xoxco.css" >
+    <link rel="stylesheet" type="text/css" href="http://xoxco.com/new/css/768.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="http://xoxco.com/new/css/1024.css" media="screen and (min-width: 1024px)"> 
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+        
+        <script src="http://xoxco.com/js/jquery.min.js"></script>
+        <script src="http://xoxco.com/js/jcarousel.js"></script>
+        <script src="http://xoxco.com/js/hammer.js"></script>
+        <script src="http://xoxco.com/js/jquery.hammer.js"></script>
+        <script src="http://xoxco.com/projects/code/dockable/dockable.js"></script>
+
+        <script src="http://xoxco.com/new/js/xoxco.js"></script>
+    </head>
+    <body>
+
+    <div id="wrapper">
+		<header>
+			<h1 id="logo"><a href="/" title="ex-oh-ex-koh!"><img src="http://xoxco.com/new/img/logo.png" alt="XOXCO" border="0"/></a></h1>
+			<ul id="animated_logo">
+				<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/x1.png" alt="x" border="0"></a></li>
+				<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/o1.png" alt="o" border="0"></a></li>
+				<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/x2.png" alt="c" border="0"></a></li>
+				<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/c.png" alt="c" border="0"></a></li>
+				<li><a href="http://xoxco.com/"><img src="http://xoxco.com/new/img/logoblocks/o2.png" alt="o" border="0"></a></li>
+			</ul>
+			<nav>
+				<ul class="clearfix">
+					<li>
+						<a href="http://xoxco.com/">Howdy!</a>
+					</li>
+					<li>
+						<a href="http://xoxco.com/projects">Projects</a>
+					</li>
+					<li class="current">
+						<a href="http://notes.xoxco.com">Blog</a>
+					</li>
+
+					<li>
+						<a href="http://xoxco.com/team/">Team</a>
+					</li>
+					<li>
+						<a href="http://xoxco.com/contact/">Contact</a>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+      <div class="main">
+
+		<section id="sidebar">
+			
+			<div id="about">
+				<h4>About</h4>
+			        {block:Description}
+				            <p id="description">{Description}</p>
+			        {/block:Description}			
+			</div>
+			
+			<div>
+		
+			<div class="dock">
+			<form action="/search" method="get">
+				<input type="text" name="q" value="{SearchQuery}"/>
+				<input type="submit" value="Search"/>
+			</form>
+			</div>
+
+			</div>
+				
+		</section>
+
+
+		<section>
+        <ol id="posts">
+            {block:Posts}
+                {block:Text}
+                    <li class="post text">
+						<div class="post_info">				
+							<div class="body">
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+								<a href="{Permalink}" class="post_date">{block:Date}{ShortMonth} {DayOfMonth}, {Year}{/block:Date}</a>
+								{block:Title}
+									<h4><a href="{Permalink}">{Title}</a></h4>
+								{/block:Title}
+									{block:HasTags}
+									<ul class="tags">
+										<li>A post about </li>
+										{block:Tags}
+	
+											<li>
+												<a href="{TagURL}">#{Tag}</a>
+											</li>
+										{/block:Tags}
+									</ul>
+								{/block:HasTags}
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+							
+							</div>
+						</div>						
+					
+
+                        {Body}
+
+                    </li>
+                {/block:Text}
+
+                {block:Photo}
+                    <li class="post photo">
+						<div class="post_info">				
+							<div class="body">
+
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+								<a href="{Permalink}" class="post_date">{block:Date}{ShortMonth} {DayOfMonth}, {Year}{/block:Date}</a>
+								<h4><a href="{Permalink}">Image</a></h4>
+								{block:HasTags}
+									<ul class="tags">
+										<li>A post about </li>
+										{block:Tags}
+	
+											<li>
+												<a href="{TagURL}">#{Tag}</a>
+											</li>
+										{/block:Tags}
+									</ul>
+								{/block:HasTags}
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+						</div>						
+						</div>
+                        <a href="{PhotoURL-HighRes}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/></a>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photo}
+
+                {block:Photoset}
+                    <li class="post photoset">
+						<div class="post_info">			
+							<div class="body">
+							
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+								<a href="{Permalink}" class="post_date">{block:Date}{ShortMonth} {DayOfMonth}, {Year}{/block:Date}</a>
+								<h4><a href="{Permalink}">Images</a></h4>
+								{block:HasTags}
+									<ul class="tags">
+										<li>A post about </li>
+										{block:Tags}
+	
+											<li>
+												<a href="{TagURL}">#{Tag}</a>
+											</li>
+										{/block:Tags}
+									</ul>
+								{/block:HasTags}
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+						</div>	
+						</div>	
+										
+<div class="clearfix">
+	<ul>
+		{block:Photos}
+			<li><a href="{PhotoURL-HighRes}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/></a></li>
+		{/block:Photos}
+	</ul>
+</div>
+<!-- <p>Click image to advance carousel &rarr;</p> -->
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photoset}
+
+                {block:Quote}
+                    <li class="post quote">
+						<div class="post_info">				
+							<div class="body">
+
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+								<a href="{Permalink}" class="post_date">{block:Date}{ShortMonth} {DayOfMonth}, {Year}{/block:Date}</a>
+								<h4><a href="{Permalink}">Quote</a></h4>
+								{block:HasTags}
+									<ul class="tags">
+										<li>A post about </li>
+										{block:Tags}
+	
+											<li>
+												<a href="{TagURL}">#{Tag}</a>
+											</li>
+										{/block:Tags}
+									</ul>
+								{/block:HasTags}
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+
+						</div>		
+						</div>				
+					
+						<div class="quote_text">
+                        {Quote}
+                        </div>
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+                    </li>
+                {/block:Quote}
+
+                {block:Link}
+                    <li class="post link">
+						<div class="post_info">			
+													<div class="body">
+	
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+								<h4><a href="{Permalink}">{block:Date}{ShortMonth} {DayOfMonth}, {Year}{/block:Date}</a></h4>
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+
+							{block:HasTags}
+								<ul class="tags">
+									<li>A post about </li>
+									{block:Tags}
+
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+						</div>						
+						</div>
+                        <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </li>
+                {/block:Link}
+
+                {block:Chat}
+                    <li class="post chat">
+						<div class="post_info">				
+								<div class="body">
+
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+							{block:Title}
+								<h3><a href="{Permalink}">{Title}</a></h3>
+							{/block:Title}
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+
+							{block:HasTags}
+								<ul class="tags">
+									<li>A post about </li>
+									{block:Tags}
+
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+						</div>			
+						</div>			
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}
+
+                                    {Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </li>
+                {/block:Chat}
+
+                {block:Video}
+                    <li class="post video">
+						<div class="post_info">				
+							<div class="body">
+
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+								<h4><a href="{Permalink}">{block:Date}{ShortMonth} {DayOfMonth}, {Year}{/block:Date}</a></h4>
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+
+							{block:HasTags}
+								<ul class="tags">
+									<li>A post about </li>
+									{block:Tags}
+
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+						</div>						
+					</div>
+                        {Video-500}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Video}
+
+                {block:Audio}
+                    <li class="post audio">
+						<div class="post_info">				
+							<div class="body">
+						
+							<div class="avatar">
+								<a href="{PostAuthorURL}" title="Read {PostAuthorName}'s blog, {PostAuthorTitle}"><img src="{PostAuthorPortraitURL-96}" align="absmiddle" /></a>
+							</div>
+
+							<h4><a href="{Permalink}">{block:Date}{ShortMonth} {DayOfMonth}, {Year}{/block:Date}</a></h4>
+								<p class="byline">
+								by <a href="{PostAuthorURL}">{PostAuthorName}</a>{block:RebloggedFrom}, originally posted on <a href="{ReblogParentURL}">{ReblogParentTitle}</a>{/block:RebloggedFrom}
+								</p>
+
+							{block:HasTags}
+								<ul class="tags">
+									<li>A post about </li>
+									{block:Tags}
+										<li>
+											<a href="{TagURL}">#{Tag}</a>
+										</li>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+						</div>						
+	</div>
+                        {AudioPlayerBlack}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Audio}
+            {/block:Posts}
+        </ol>
+        
+        <block:PermalinkPage>
+        	<div id="permalink_footer">
+
+        	<p>
+        		This is a post from <a href="http://notes.xoxco.com/">XOXCO's company blog</A>.
+        		XOXCO is a product design and development company based in Austin, Texas.
+        		We create apps, write code, and provide design consulting.
+        		<a href="http://twitter.com/xoxco">Follow us on Twitter</a> or <a href="http://xoxco.com/">visit our site to learn more.</a>
+        	</p>
+
+            <p><a href="http://packa.gr"><img src="http://xoxco.com/packagr/img/logo.png" border="0" align="left" width="100"  hspace="10"></a> <a href="http://packa.gr">Packagr is XOXCO's next generation publishing tool that allows you to instantly create apps, ebooks, newsletters and other premium multi-platform digital products.</a></p>
+</div>
+        </block:PermalinkPage>
+		</section>
+		<section>
+        <p id="footer">
+            {block:PreviousPage}
+                <a href="{PreviousPage}">&#171; Previous</a>
+            {/block:PreviousPage}
+
+            {block:NextPage}
+                <a href="{NextPage}">Next &#187;</a>
+            {/block:NextPage}
+
+            <a href="/archive">Archive</a>
+        </p>
+		</section>
+		</div>
+		<footer>
+			<nav>
+				<ul class="clearfix">
+					<li>
+						<a href="/">Howdy</a>
+					</li>
+					<li >
+						<a href="/projects/">Projects</a>
+					</li>
+					<li  class="current">
+						<a href="http://notes.xoxco.com">Blog</a>
+					</li>
+
+					<li >
+						<a href="/team/">Team</a>
+					</li>
+					<li>
+						<a href="/contact/">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+
+
+	<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-84020-31']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
