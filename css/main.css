@@ -754,6 +754,9 @@ ul#animated_logo li {
 #blog {
   position: relative; }
 
+ol#posts #pagination.post {
+  border-bottom: 0; }
+
 #pagination .newer, #pagination .older {
   display: block;
   background: #CCC;
